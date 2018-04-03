@@ -1,0 +1,61 @@
+What resources do we have?
+
+Artificial Intelligence/Machine Learning field is getting a lot of attention right now, and knowing where to start can be a little difficult. Fortunately, there are a lot of great resources.
+https://hackernoon.com/index-of-best-ai-machine-learning-resources-71ba0c73e34d
+https://www.quora.com/What-are-the-best-sources-to-learn-more-about-artificial-intelligence
+https://www.tutorialspoint.com/artificial_intelligence/artificial_intelligence_useful_resources.htm 
+https://stackoverflow.com/questions/2771795/online-ai-resources
+https://eu.udacity.com/course/intro-to-artificial-intelligence--cs271 
+
+The market for artificial intelligence (AI) technologies is flourishing. 
+Beyond the hype and the heightened media attention, the numerous startups and the internet giants racing to acquire them, there is a significant increase in investment and adoption by enterprises.  
+“Artificial Intelligence” today includes a variety of technologies and tools, some time-tested, others relatively new.
+https://www.forbes.com/sites/gilpress/2017/01/23/top-10-hot-artificial-intelligence-ai-technologies
+
+Artificial intelligence (AI) has gradually been making its way into business software and will continue to for the foreseeable future. 
+For the developers interested in building their own intelligent applications there are a lot of AI platforms, machine learning algorithms, and deep learning libraries and frameworks used to create such functionality.
+https://www.g2crowd.com/categories/artificial-intelligence
+https://github.com/Project-Platypus/Rhodium 
+https://github.com/SilverDecisions/SilverDecisions/wiki/2.-Create-your-first-decision-tree-with-SilverDecisions
+https://github.com/liitfr/electre-js
+https://github.com/motdotla/angrycorner
+
+
+What solutions did others find for decision making?
+
+A tree has many analogies in real life, and turns out that it has influenced a wide area of machine learning, covering both classification and regression. 
+In decision analysis, a decision tree can be used to visually and explicitly represent decisions and decision making. As the name goes, it uses a tree-like model of decisions. 
+https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052
+
+
+This article presents the current landscape of machine learning algorithms and explain how they work, provide example applications, share how other companies use them, and provide further resources on learning about them.
+https://www.techemergence.com/machine-learning-algorithms-for-business-applications-complete-guide/
+
+
+What are the risks of decision making by AI?
+
+Elon Musk recently warned that artificial intelligence is the “biggest risk we face as a civilization.”
+What Musk’s statement highlights is something that's pretty pervasive throughout society -- the fear that autonomous AI is going to make humans obsolete coupled with the fear that AI exists completely independently of human guidance.
+AI isn’t an arbiter of ethics, all it can do in the ethics space is to support and augment our own decision making -- and act as an alarm when we’re getting it wrong.
+The problem is that ethics are generally something that humans feel rather than intellectualize. We can’t train that feeling, and though we could give AI examples of ethical behavior, it’s inevitable that we’d miss some.
+https://www.forbes.com/sites/forbestechcouncil/2017/12/21/the-role-of-artificial-intelligence-in-ethical-decision-making
+
+Our individual lives and our civilization as a whole are governed to an ever-increasing extent by algorithms and domain-specific artificial intelligence .
+Well known examples include such ubiquitous things as smartphones,air traffic control systems and internet search engines. 
+Financial markets,too,are dependent on algorithms. There is always the possibility that an unlikely “black swan” event might occur. In 2010, an unexpected "flash crash" in a US stock market left the financial world dumbfounded. 
+Within minutes, important shares lost more than 90% of their worth and then quickly returned to their high initial value. If such an event were to take place in a military context, a comparable “return to initial conditions” would be improbable.
+https://ea-foundation.org/files/ai-opportunities-and-risks.pdf
+
+Most researchers agree that a superintelligent AI is unlikely to exhibit human emotions like love or hate, and that there is no reason to expect AI to become intentionally benevolent or malevolent. Instead, when considering how AI might become a risk, experts think two scenarios most likely:
+-The AI is programmed to do something devastating: Autonomous weapons are artificial intelligence systems that are programmed to kill. 
+In the hands of the wrong person, these weapons could easily cause mass casualties. Moreover, an AI arms race could inadvertently lead to an AI war that also results in mass casualties. 
+-The AI is programmed to do something beneficial, but it develops a destructive method for achieving its goal: This can happen whenever we fail to fully align the AI’s goals with ours, which is strikingly difficult. 
+If a superintelligent system is tasked with a ambitious geoengineering project, it might wreak havoc with our ecosystem as a side effect, and view human attempts to stop it as a threat to be met.
+https://futureoflife.org/background/benefits-risks-of-artificial-intelligence/ 
+
+Rather than worrying about a future AI takeover, the real risk is that we can put too much trust in the smart systems we are building. 
+A system is only as good as the data it learns from. Take a system trained to learn which patients with pneumonia had a higher risk of death, so that they might be admitted to hospital. 
+It inadvertently classified patients with asthma as being at lower risk. This was because in normal situations, people with pneumonia and a history of asthma go straight to intensive care and therefore get the kind of treatment that significantly reduces their risk of dying. The machine learning took this to mean that asthma + pneumonia = lower risk of death.
+http://www.bbc.com/future/story/20161110-the-real-risks-of-artificial-intelligence
+
+
