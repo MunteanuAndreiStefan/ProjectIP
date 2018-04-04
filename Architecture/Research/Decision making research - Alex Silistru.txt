@@ -1,0 +1,102 @@
+-> What do we need to do?
+
+We must create an application which aims to simulate the human brain. 
+
+Because this task is more or less impossible, we'll focus on a few select areas of the brain activity: the recognition of objects/concepts from pictures and text (as well as implementing a portion of creativity related to them) and the simulation of the brain's memory (short term and long term memory).
+
+
+----------------------------------------------------------------------------
+
+
+-> What solutions have others found for the problem of decision making?
+
+
+- Decision tree learning uses a decision tree (as a predictive model) to go from observations about an item (represented in the branches) to conclusions about the item's target value (represented in the leaves).
+http://www.doc.ic.ac.uk/~sgc/teaching/pre2012/v231/lecture11.html
+
+- There are many different types of algorithms used in decision making, with differing functions, and associated issues of bias and transparency. 
+https://www.raeng.org.uk/publications/responses/algorithms-in-decision-making
+
+- The Human Brain Project is a H2020 FET Flagship Project which strives to accelerate the fields of neuroscience, computing and brain-related medicine.
+This acceleration will be achieved by a strategic alignment of scientific research programmes in fundamental neuroscience, advanced simulation and multi-scale modelling with the construction of an enabling Research Infrastructure.
+http://www.humanbrainproject.eu/en/
+
+- MOEA/D (multi-objective evolutionary algorithm based on decomposition) works by decomposing MOPs (multi-objective problems) into single 'sub-problems', before selecting and presenting an optimal set of possible solutions known as the 'Pareto frontier'.
+https://phys.org/news/2016-12-decision-making-algorithm.html
+
+- Today’s AI advances wouldn’t have been possible without the confluence of three factors that combined to create the right equation for AI growth: the rise of big data combined with the emergence of powerful graphics processing units (GPUs) for complex computations and the re-emergence of a decades-old AI computation model—deep learning.
+https://www.ibm.com/watson/advantage-reports/future-of-artificial-intelligence/ai-innovation-equation.html
+
+- This post considers what happened in Machine Learning & Artificial Intelligence in 2017, and what may be on the horizon for 2018
+https://www.kdnuggets.com/2017/12/machine-learning-ai-main-developments-2017-key-trends-2018.html
+
+- A consensus on well-researched projections of AI’s growth and market value in the coming decade
+https://www.techemergence.com/valuing-the-artificial-intelligence-market-graphs-and-predictions/
+
+
+----------------------------------------------------------------------------
+
+
+-> What resources do we have?
+
+* General machine learning resources
+
+- Documentation and guidance offered by Google
+https://ai.google/education/#
+
+- Various GitHub resource lists related to machine learning
+https://GitHub.com/josephmisiti/awesome-machine-learning
+
+- 30 recent open source machine learning projects
+https://medium.mybridge.co/30-amazing-machine-learning-projects-for-the-past-year-v-2018-b853b8621ac7
+
+- Other GitHub projects
+https://github.com/h2oai/h2o-3
+https://github.com/Borye/machine-learning-coursera-1
+https://github.com/BVLC/caffe
+https://github.com/fastai/courses
+https://github.com/kailashahirwar/cheatsheets-ai
+
+
+* Image recognition resources
+
+- Google Cloud Vision API enables developers to understand the content of an image by encapsulating powerful machine learning models in an easy to use REST API.
+https://cloud.google.com/vision/
+
+- OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications.
+https://opencv.org/
+
+- ITK is an open-source, cross-platform system that provides developers with an extensive suite of software tools for image analysis. 
+https://itk.org/
+
+- A multi-platform collection of C++ software libraries for Computer Vision and Image Understanding. 
+https://GitHub.com/vxl/vxl
+
+- Other GitHub projects
+https://github.com/topics/image-recognition
+
+* Text mining resources
+
+- TextFlows is an open-source online platform for composition, execution, and sharing of interactive text mining and natural language processing workflows. 
+https://GitHub.com/xflows/textflows
+
+- DisKoveror is a Text Analytics framework developed by Serendio. Built on top of other open source packages, it provides a flexible and extensible way to extract Entities, Topics, Categories, Sentiments, and Keywords from unstructured text regardless of its source. 
+https://GitHub.com/SubhasisDutta/Text-Analysis
+
+- Other GitHub projects
+https://GitHub.com/topics/text-mining
+
+
+----------------------------------------------------------------------------
+
+
+-> What are the risks involved?
+
+- Machines spot problems, but only humans can determine why a problem exists and how to prevent it. Machines, tireless and unbiased, can question data relentlessly until they’ve uncovered all the unexpected patterns. Unlike us though, they cannot tap personal experience, emotional intelligence, and ethics to understand these relationships – and act on them. Therefore, if we care about making sound decisions, we need to combine the strengths and weaknesses of human beings and machines. We should program machines to explain their discoveries in a way humans can understand. If we focus on bridging that comprehension gap, we can enable symbiosis between humans and machines. Let computers compute, and let people comprehend.
+http://www.information-age.com/how-much-decision-making-should-we-leave-machines-123461671/
+
+- Algorithmic bias is one of the biggest risks because it compromises the very purpose of machine learning. This often-overlooked defect can trigger costly errors and, left unchecked, can pull projects and organizations in entirely wrong directions. The severity of the bias can be magnified by machine-learning algorithms that must assume things will more or less continue as before in order to operate. Using a machine-learning model is more like driving a car than riding an elevator. To get from point A to point B, users cannot simply push a button; they must first learn operating procedures, rules of the road, and safety practices.
+https://www.mckinsey.com/business-functions/risk/our-insights/controlling-machine-learning-algorithms-and-their-biases
+
+- Often, the algorithms are clean, simple and discrete problems, the more difficult and very important part being collecting, classifying and labeling datasets used to train the algorithms - especially datasets comprehensive enough to reflect the real world. Companies building AI systems need to look at whether the data and the algorithms that analyze the data are in line with the principles, goals, and values of the organization. If a company has data coming in from multiple sources, it’s important to check the data from one source against another before applying any machine learning.
+https://www.cio.com/article/3254693/artificial-intelligence/ais-biggest-risk-factor-data-gone-wrong.html
