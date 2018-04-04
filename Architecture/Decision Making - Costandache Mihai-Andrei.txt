@@ -1,3 +1,5 @@
+*******************
+
 What resources do we have?
 
 Artificial Intelligence/Machine Learning field is getting a lot of attention right now, and knowing where to start can be a little difficult. Fortunately, there are a lot of great resources.
@@ -20,6 +22,10 @@ https://github.com/SilverDecisions/SilverDecisions/wiki/2.-Create-your-first-dec
 https://github.com/liitfr/electre-js
 https://github.com/motdotla/angrycorner
 
+Neural Network in browser:
+https://playground.tensorflow.org
+
+*******************
 
 What solutions did others find for decision making?
 
@@ -27,10 +33,31 @@ A tree has many analogies in real life, and turns out that it has influenced a w
 In decision analysis, a decision tree can be used to visually and explicitly represent decisions and decision making. As the name goes, it uses a tree-like model of decisions. 
 https://towardsdatascience.com/decision-trees-in-machine-learning-641b9c4e8052
 
+Decision trees explained:
+https://www.youtube.com/watch?v=Kx9Z3B8rXSo
+https://www.youtube.com/watch?v=LDRbO9a6XPU
+https://www.youtube.com/watch?v=DCZ3tsQIoGU
+https://www.youtube.com/watch?v=eKD5gxPPeY0
+
+Decision tree algorithm in Java:
+https://intelligentjava.wordpress.com/2015/04/28/machine-learning-decision-tree/
+
+Bayesian classifiers:
+https://www.analyticsvidhya.com/blog/2017/09/naive-bayes-explained/
+https://www.tutorialspoint.com/data_mining/dm_bayesian_classification.htm
+http://www.statsoft.com/textbook/naive-bayes-classifier
+https://stackoverflow.com/questions/10059594/a-simple-explanation-of-naive-bayes-classification
+
+Neural networks:
+https://www.tutorialspoint.com/artificial_intelligence/artificial_intelligence_neural_networks.htm
+http://neuralnetworksanddeeplearning.com/chap1.html
+http://natureofcode.com/book/chapter-10-neural-networks/
+https://techcrunch.com/2017/04/13/neural-networks-made-easy/
 
 This article presents the current landscape of machine learning algorithms and explain how they work, provide example applications, share how other companies use them, and provide further resources on learning about them.
 https://www.techemergence.com/machine-learning-algorithms-for-business-applications-complete-guide/
 
+********************
 
 What are the risks of decision making by AI?
 
