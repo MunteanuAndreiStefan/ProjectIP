@@ -1,0 +1,84 @@
+*******************
+What we need to do? 
+
+Briefly, we must create an aplication that simulates the human brain. This is quite impossible to simulate the entire human brain and this is the main reason why we reduced our work to : 
+	* The recognition of objects from a picture
+	* The recognition of a text
+	...
+	and maybe the creative part of brain.
+Our application must have memory, like our brain, this will help our "artificial brain" to memorize objects/concepts from environment. Like humans, the "artificial brain" will have two types of memory, short-term memory and long-term one. We must find a way of holding data in these two types of memory based on frequency of concepts/objects seen in "that day" or the importance of them.
+
+*******************
+What others have done?
+
+There're a lot of other people who already are doing this. But what they have succeeded? Can we do better? 
+
+(*)(href = "https://en.wikipedia.org/wiki/Blue_Brain_Project")
+Blue Brain is a project that was launched in May 2005 by IBM and the Swiss Federal Institute of Technology in Lausanne. The intention of the project was to create a computer simulation of a mammalian cortical column, down to the molecular level. The project uses a supercomputer based on IBM's Blue Gene design to simulate the electrical behavior of neurons based upon their synaptic connectivity and complement of intrinsic membrane currents. The project seeks to eventually reveal aspects of human cognition and various psychiatric disorders caused by malfunctioning neurons, such as autism, and to understand how pharmacological agents affect network behavior.
+
+
+(*)(href = "https://en.wikipedia.org/wiki/Human_Brain_Project")
+The Human Brain Project (HBP) is a 10-year program of research funded by the European Union. It began in 2013 and employs around 500 scientists across Europe. It includes 6 platforms:
+    **Neuroinformatics (shared database),
+    **Brain Simulation
+    **High-Performance Analytics and Computing
+    **Medical Informatics (patient database)
+    **Neuromorphic Computing (brain-inspired computing)
+    **Neurorobotics (robotic simulations).
+The Brain Simulation Platform (BSP) is a device for internet-accessible tools, which allows investigations that are not possible in the laboratory. They are applying Blue Brain techniques to other brain regions, such as the cerebellum, hippocampus, and the basal ganglia.[14]
+
+
+(*)(href = "http://www.bbc.com/future/story/20130207-will-we-ever-simulate-the-brain")
+   (href = "http://bigthink.com/ideafeed/how-close-are-we-to-simulating-the-human-brain")
+"[Markram] said that in 10 years, we could have a fully simulated brain, but I don’t think that’ll happen.”
+
+
+Object recognition approaches
+There is not only one method/approache for object recognition, a list of used aproaches can be checked here :
+(*)https://en.wikipedia.org/wiki/Outline_of_object_recognition
+
+
+**********************
+Libraries and lectures for image recognition : 
+
+(*)(href ="https://www.tensorflow.org/")
+TensorFlow is an open-source software library for dataflow programming across a range of tasks. It is a symbolic math library, and is also used for machine learning applications such as neural networks.
+
+
+Learning Algorithm for classification. How does SVM algorithm works for immage classification?
+(*)(href = "https://www.learnopencv.com/image-recognition-and-object-detection-part1/")
+
+
+Google Cloud Vision API enables developers to understand the content of an image by encapsulating powerful machine learning models in an easy to use REST API. It quickly classifies images into thousands of categories.
+(*)href = "https://cloud.google.com/vision/";
+
+
+Caffe is a deep learning framework made with expression, speed, and modularity in mind. It is developed by Berkeley AI Research (BAIR) and by community contributors.
+(*)href = "caffe.berkeleyvision.org";
+
+Microsoft Azure, Text and Image analytics.Detects sentiment, key phrases, and language from your text.
+Extract rich information from images to categorize and process visual data – and machine-assisted moderation of images to help curate your services.
+(*)href = "https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/";
+(*)href = "https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/";
+
+**************************************************
+What solutions did others find for decision making?
+
+In general, others used machine learning algorithms with decision trees.
+(*)https://en.wikipedia.org/wiki/Decision_tree_learning
+(*)https://www.xoriant.com/blog/product-engineering/decision-trees-machine-learning-algorithm.html
+
+
+Recognitions of objects on the topology basis && Neural networks using.
+https://ac.els-cdn.com/S1877705815040102/1-s2.0-S1877705815040102-main.pdf?_tid=306241a3-3713-49b3-bc0e-51a769f7121e&acdnat=1522802698_e86097a859f0350e42f3a34a73cbe9cf
+
+
+
+***********************************************
+What are the risks of decision making by Artificial Inteligence?
+
+Several studies have shown that AI may displace huge sectors of the workforce, and not only in traditionally blue-collar jobs. There are also concerns that algorithms might start to deny people certain opportunities, such as bank loans or college admissions, based on racial profiling. The technology could also be used by governing forces to detect and suppress any kind of dissent, helping to create very autocratic societies.
+
+As virtual assistants become more able to accurately predict what kind of news stories a person will be interested in, there is also the potential for shaping and polarising a society’s opinions. And of course, the idea of weapons that are able to act autonomously is alarming to many people.
+
+In my point of view, artificial intelligence can never replace the human brains. They are progammed with a certain set of questions beyoned which the reply remains to be the same. moreover chatbots are not that user friendly. A more scenario based solution is perfectly given only by the humans and not the chatbots.
