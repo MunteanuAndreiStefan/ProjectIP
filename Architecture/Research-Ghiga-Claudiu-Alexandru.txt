@@ -1,0 +1,40 @@
+1) What solutions to the problem of decision-making did others find?
+    Architecture of an intelligent system (relevant are the sections on memory and decision-making)
+        http://compneuro.uwaterloo.ca/files/publications/eliasmith.2012.pdf
+            - scientific paper that gives an overview of Spaun, which is a working model of a brain in which input data is given in the form of images and responses take the form of drawings made with the help of a mechanical arm; it  briefly explains the architecture of the application and goes into the reasons why they favored the current design
+        https://www.amazon.com/How-Build-Brain-Architecture-Architectures/dp/0199794545/
+            - the book on which Spaun is based upon
+        http://ieeexplore.ieee.org/abstract/document/5596513/
+            - an article which presents a model of the brain of Drosophila melanogaster; it includes a decision making model which chooses the appropriate actions according to received stimuli (modeled with the help of a spiking neural network: https://en.wikipedia.org/wiki/Spiking_neural_network)
+        https://en.wikipedia.org/wiki/Cognitive_architecture
+            - an overview of the many ways in which a cognitive system can be organized
+        http://act-r.psy.cmu.edu/about/
+        https://en.wikipedia.org/wiki/Soar_%28cognitive_architecture%29
+        https://web.eecs.umich.edu/~soar/sitemaker/docs/misc/GentleIntroduction-2006.pdf
+            - from the Wkipeidia article on cognitive architectures, some of the most used models are ACT-R and SOAR
+            
+2) What resources do we have?
+    A. Links related to the implementation:
+        https://github.com/xchoo/spaun2.0
+            - link to the Spaun github repository (no license specified)
+        https://github.com/Flowx08/Celegans-simulation
+            - an open-source project which simulates the brain and body of the C. elegans worm (MIT license)
+    B. Learning resources and libraries
+        a) Big lists
+            https://github.com/ujjwalkarn/Machine-Learning-Tutorials
+            https://www.datasciencecentral.com/profiles/blogs/great-list-of-resources-data-science-visualization-machine-learni
+            https://daoudclarke.github.io/machine%20learning%20in%20practice/2013/10/08/machine-learning-libraries
+        b) Individual tutorials
+            https://karpathy.github.io/neuralnets/
+            http://adventuresinmachinelearning.com/neural-networks-tutorial/
+            http://www.ai-junkie.com/ann/evolved/nnt1.html
+            https://dzone.com/articles/designing-a-neural-network-in-java
+            
+3) What are the risks?
+    A. Hardware
+        - brain simulators are resource intensive computer programs, work on large datasets and require large amounts of memory, as seen here: www.thevirtualbrain.org/tvb/zwei/brainsimulator-requirements
+    B. Software
+        - choosing libraries/frameworks that lack features which are necessary for project development
+        - choosing libraries/frameworks that have an unnecessarily complex interface for our goals
+    C. Planning/engineering
+        - adopting a model that is too complex, which can lead to difficulty in implementation and not meeting deadlines
