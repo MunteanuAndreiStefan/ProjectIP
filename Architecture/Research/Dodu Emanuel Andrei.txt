@@ -1,0 +1,55 @@
+--------------------
+
+The importance of a brain simulator
+
+--------------------
+
+What does it mean to simulate the human brain?
+Why is it important to do so? 
+And is it even possible to simulate the brain separately from the body it exists in?
+Simulating the brain means modeling it on a computer. But in real life, brains don't exist in isolation. 
+The brain is a complex and adaptive system that is seated within our bodies and entangled with all the other adaptive systems inside us that together make up a whole person. 
+And the fact that the brain is a brain inside our bodies is something we can't ignore when we attempt to simulate it realistically. 
+
+For many scientists,
+understanding means being able to create a mental model that allows them to predict how a system would behave under different conditions.
+For the brain sciences, this type of understanding is currently only possible for a limited number of basic functions.  
+In broad terms it has to do with understanding. But what does understanding mean in neuroscience?
+
+As it dwells inside our bodies, the brain is always a result of what the individual has experienced up to that point. 
+That is why, when we simulate the brain, we have to take this 'experienced brain' into account and try and reflect that.
+
+According to Kathinka Evers, leader of the Ethics and Society part of the Human Brain Project, 
+neglecting this experience would severely limit the outcome of any brain simulation. But if we are to include experience we have to simulate real-life situations.
+
+But if we do manage to simulate the brain, would that mean we have created artificial consciousness? 
+And can a computer be conscious at all? That depends on what consciousness is:
+If it is the result of certain types of organization or functions of biological matter, like the cells in the human body, then a computer can never gain consciousness.
+But if it is a matter of organization alone, without the need for biological matter, then the answer could be yes. But it is still a very hypothetical stance.
+
+--------------------
+
+First we need to set basic functions of our brain simulator.
+
+After you need to set our brain simulator to learn new things using these basic functions.
+Here's an example:
+
+https://www.youtube.com/watch?v=4ghhVl_UJwk
+
+------------------------
+
+And some sources for what we need to do:
+
+http://www.kurzweilai.net/google-simulates-brain-networks-to-recognize-speech-and-images
+
+https://thenewstack.io/mind-reading-ai-optimizes-images-reconstructed-brain-waves/
+
+-----------------
+
+Some github code for an Image Recognition System:
+
+https://github.com/Lupino/huabot-brain
+
+https://github.com/GoodAI/BrainSimulator
+
+
