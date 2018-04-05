@@ -1,6 +1,6 @@
 *******************
 What we need to do? 
-
+//
 Briefly, we must create an aplication that simulates the human brain. This is quite impossible to simulate the entire human brain and this is the main reason why we reduced our work to : 
 	* The recognition of objects from a picture
 	* The recognition of a text
