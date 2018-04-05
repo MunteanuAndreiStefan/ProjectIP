@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Decision Module" version="4">
+  <OBJECT>
+    <ID name="Decision Module" mc="Standard.Package" uid="7cc6995c-f433-496a-ac76-9b301328270a"/>
+    <PID name="ProjectIP" mc="Standard.Project" uid="7d493194-deb7-4d18-a1c8-867d3b0e1dfa"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Decision Module]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="User" mc="Standard.Actor" uid="75dc330f-4c88-4250-9363-a56f92f7a2da"/>
+        <COMPID name="Login" mc="Standard.UseCase" uid="89d6df7c-f11c-42c0-a410-b3f8eea74589"/>
+        <COMPID name="View concepts (view memory)" mc="Standard.UseCase" uid="5b80c41d-3533-452e-9be1-43b3f97be1f3"/>
+        <COMPID name="View concept details" mc="Standard.UseCase" uid="bac1919c-9e23-463c-8386-023cc2637754"/>
+        <COMPID name="Select concept" mc="Standard.UseCase" uid="0bee01ba-6921-429f-922a-885f8bf6920f"/>
+        <COMPID name="Load memory file" mc="Standard.UseCase" uid="cc1ae92c-07f1-49e5-b7a0-6f9e613d8fdf"/>
+        <COMPID name="Modfiy concept" mc="Standard.UseCase" uid="963e396f-e888-4581-a026-fdefe7a45dd5"/>
+        <COMPID name="Generate new content for this concept" mc="Standard.UseCase" uid="8308b11c-b279-4707-91d4-2912d09ec946"/>
+        <COMPID name="Delete selected concept" mc="Standard.UseCase" uid="0074e9d9-4d92-4a63-819f-3281f394e695"/>
+        <COMPID name="View upload button" mc="Standard.UseCase" uid="4ec86fdc-4134-4f18-a992-5fc9341babe8"/>
+        <COMPID name="Concept returned is a new one, ask user to provide some help to create it" mc="Standard.UseCase" uid="999f9403-feaf-4137-bce3-3c733adf1c51"/>
+        <COMPID name="View concept returned as result" mc="Standard.UseCase" uid="e586be05-88d7-4fce-b686-67b002a0c534"/>
+        <COMPID name="Export memory file" mc="Standard.UseCase" uid="7e9fae29-37ef-4026-ae21-f861b3778b0f"/>
+        <COMPID name="Upload file" mc="Standard.UseCase" uid="33ad0952-fde6-43d1-a130-4de89a4607f9"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Use case for decision" mc="Standard.UseCaseDiagram" uid="4790999d-9675-437b-96ab-c22b12a6395e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

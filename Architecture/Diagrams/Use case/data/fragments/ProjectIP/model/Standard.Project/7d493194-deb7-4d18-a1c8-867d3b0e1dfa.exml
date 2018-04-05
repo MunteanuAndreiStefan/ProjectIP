@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ProjectIP" version="4">
+  <OBJECT>
+    <ID name="ProjectIP" mc="Standard.Project" uid="7d493194-deb7-4d18-a1c8-867d3b0e1dfa"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[ProjectIP]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="projectip" mc="Standard.Package" uid="7cc6995c-f433-496a-ac76-9b301328270a"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="ProjectIP" mc="Infrastructure.DiagramSet" uid="8c40501a-9538-4e53-bb3f-df87ad26a7b9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
