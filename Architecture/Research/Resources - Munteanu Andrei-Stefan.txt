@@ -1,0 +1,14 @@
+-> Some resources we may use:
+https://deeplearning4j.org/
+
+https://pjreddie.com/darknet/yolo/             ***********************  Sources + Paper + Models, best solution for our problems, it works on GPU.
+https://github.com/facebookresearch/Detectron  *********************** Sources + Paper + Models, best solution for our problems, it works on GPU.
+https://github.com/Bkmz21/CompactCNNCascade    *********************** Paper about Compact Convolutional Neural Network Cascade
+https://github.com/BichenWuUCB/squeezeDet      ***********************  A tensorflow implementation for SqueezeDet, a convolutional neural network for object detection, it works on CPU.
+
+https://mez.github.io/2017/04/21/squeezedet-deep-learning-for-object-detection/
+https://arxiv.org/pdf/1702.05147.pdf
+http://www.diva-portal.org/smash/get/diva2:1054902/FULLTEXT02
+https://www.sciencedirect.com/science/article/pii/S1877050915014076
+https://github.com/shawnau/py-faster-rcnn-cpu
+https://github.com/PacktPublishing/Java-Deep-Learning-Essentials
