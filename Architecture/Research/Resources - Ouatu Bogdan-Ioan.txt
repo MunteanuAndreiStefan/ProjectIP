@@ -1,0 +1,6 @@
+Resurces we may use:
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/ - original article about RNN, very comprehensive, could be the only article we need for creative module
+https://www.analyticsvidhya.com/blog/2017/12/introduction-to-recurrent-neural-networks/
+https://deeplearning4j.org/lstm.html    - simpler to understand articles
+meta research:
+https://github.com/kjw0612/awesome-rnn -A curated list of resources dedicated to recurrent neural networks
