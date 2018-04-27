@@ -1,0 +1,55 @@
+
+First of all, the decisions making problems is a process, so we have to understand the necessary steps of this process:
+1. identification of the decision problem
+2. identification of alternatives
+3. problem decomposition and modelling
+4. evaluation and analysis of alternatives
+5. selection of the best alternative
+6. implementation of the decision
+
+https://www.indecs.eu/2009/indecs2009-pp22-37.pdf
+
+
+
+What resources do we have?
+
+Decision tree learning uses a decision tree (as a predictive model) to go from observations about an item (represented in the branches) to conclusions about the item's target value (represented in the leaves). It is one of the predictive modelling approaches used in statistics, data mining and machine learning. Tree models where the target variable can take a discrete set of values are called classification trees; in these tree structures, leaves represent class labels and branches represent conjunctions of features that lead to those class labels.
+A decision tree is a flowchart-like diagram that shows the various outcomes from a series of decisions. It can be used as a decision-making tool, for research analysis, or for planning strategy. A primary advantage for using a decision tree is that it is easy to follow and understand.
+
+
+https://en.wikipedia.org/wiki/Decision_tree
+https://www.smartdraw.com/decision-tree/
+
+Understading of decisions trees:
+https://www.youtube.com/watch?v=a5yWr1hr6 QY
+
+How brain simulation should work:
+https://www.goodai.com/brain-simulator
+https://www.humanbrainproject.eu/en/brain-simulation/
+
+
+
+What solutions did others find for decision making?
+
+Repositories that might be usefull:
+
+https://github.com/lagodiuk/decision-tree
+https://github.com/charlottelinxue/C4.5-Decision-Tree-Implementation
+https://github.com/kbohinski/AI-Learning-Decision-Trees
+
+	
+DecisionMaking software can assist decision-makers “at various stages of the decision-making process, including problem exploration and formulation, identification of decision alternatives and solution constraints, structuring of preferences, and tradeoff judgements.\
+Most DM software is based on multi-criteria decision making (MCDM). MCDM involves evaluating and combining alternatives' characteristics on two or more criteria or attributes in order to rank, prioritize or choose from among the alternatives.[
+DM software employs a variety of MCDM methods with popular examples like:
+Aggregated Indices Randomization Method (AIRM);
+Elimination and Choice Expressing Reality (ELECTRE);
+Evidential reasoning approach (ER) - for MCDM under hybrid uncertainty;
+
+
+
+https://en.wikipedia.org/wiki/Decision-making_software
+
+What are the risks of decision making by AI?
+
+https://www.mckinsey.com/business-functions/risk/our-insights/controlling-machine-learning-algorithms-and-their-biases
+http://www.risktec.tuv.com/knowledge-bank/technical-articles/risk-based-decision-making.aspx
