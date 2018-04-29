@@ -1,8 +1,45 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.BorderPane?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.TextArea?>
+<BorderPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" >
+    <top>
+        <Label BorderPane.alignment="center" >
+            Brain simulator
+        </Label>   
+    </top>
+    <left>
+        <GridPane alignment="TOP_LEFT" vgap="10">
+            <children> 
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.halignment="CENTER">  
+                    Short term memory
+                </Label>
+                <TextArea maxWidth="400" minHeight="500" GridPane.columnIndex="0" GridPane.rowIndex="1">   
+        
+                </TextArea>
+            </children>
+        </GridPane>
+    </left>
+    <right>
+        <GridPane alignment="TOP_LEFT" vgap="10" >
+            <children>
+                <Label GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.halignment="CENTER" >  
+                    Long term memory
+                </Label>
+                <TextArea maxWidth="400" minHeight="500" GridPane.columnIndex="0" GridPane.rowIndex="1">  
+                    
+                </TextArea>
+            </children>
+        </GridPane>
+    </right>
+    <bottom>
+        <Button BorderPane.alignment="CENTER" > 
+            Learn
+        </Button>
+    </bottom>
+</BorderPane>
