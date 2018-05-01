@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane id="ViewDialogPane" xmlns:fx="http://javafx.com/fxml" fx:controller="viewdialog.Controller" prefWidth="500" alignment="CENTER" hgap="20">
+    <children>
+        <Button text="View concept" onAction="#handleViewConcept" fx:id="viewConceptButton" /> 
+        <Button text="Close" onAction="#handleViewDialogClose" fx:id="viewDialogCloseButton" />  
+    </children>
+</FlowPane>

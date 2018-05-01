@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane id="LoadDialogPane" xmlns:fx="http://javafx.com/fxml" fx:controller="loaddialog.Controller" prefWidth="500" hgap="20" alignment="CENTER" >
+    <children>
+        <Button text="Load file for analysis" onAction="#handleLoadForAnalysis" fx:id="loadForAnalysisButton"/> 
+        <Button text="Load memory file" onAction="#handleLoadMemory" fx:id="loadMemoryButton"/>
+    </children>
+</FlowPane>

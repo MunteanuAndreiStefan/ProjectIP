@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane id="AddDialogPane" xmlns:fx="http://javafx.com/fxml" fx:controller="adddialog.Controller" prefWidth="500" alignment="CENTER" hgap="20">
+    <children>
+        <Button text="Add new information" onAction="#handleAddConcept" fx:id="addConceptButton"/>
+        <Button text="Close" onAction="#handleAddDialogClose" fx:id="addDialogCloseButton"/>
+    </children>
+</FlowPane>
