@@ -1,0 +1,64 @@
+Mutation testing
+
+    1) Definition: Mutation testing is a method used for testing software in which small portions of the source code are altered and tested in order to find errors that can be omitted in the process of creating test cases. Modifications made to the source code should only affect "atomic" parts of the software program, such as the alteration of an operator, switching the operands of an expression, replacement of operands with constant expressions or deleting/translating blocks of instructions in the source file.
+    
+    2) Instructions for applying mutation testing
+        i) A single error should be inserted in the source file. This change creates a so-called mutant program, and multiple mutants should be created in order to test the original code (each mutant has exactly one element changed from the source code, each of these changes must be unique).
+        ii) A starting set of test cases is created for the original program and these will be used for the mutant programs as well.
+        iii) One mutant is selected and tested against the original source code.
+        iv) If the results obtained are distinct then the mutant is deleted. In this case the test cases were sufficiently able to detect the change in the original program and reacted accordingly.
+        v) If the results are identical then the mutant is kept. In this case more test cases must be written in order to detect the change in the original file and to fix it.
+        vi) After applying the tests for all the generated mutants, the score is calculated with the help of the following formula:
+            S = (M_k / M_t) * 100, where
+                M_k = number of mutants killed
+                M_t = number of total mutants
+            The minimum score is 0, maximum score is 100 and more is better.
+        
+    3) Types of mutation testing
+        A. Statement mutation - the programmer can change the position of one or more consecutive statements, delete one block of statements or insert duplicated lines of code.
+        B. Value mutation - thee initial values of the local variables/parameters are altered.
+        C. Decision mutation - the conditional statements are changed(else branches are deleted, conditional expressions are modified etc.).
+        
+    4) Advantages and disadvantages
+        Advantages: 
+            - high values of code coverage can be achieved in a relatively short amount of time
+            - ambiguities in the source code can be discovered in quickly and hidden errors which can't be detected by the initial set of test cases are rooted out with ease
+            - because it is very costly to create the mutant programs manually, tools which generate mutants programatically are already available for a variety of languages
+        Disadvantages:
+            - as there is a large number of possible mutations that can be applied to the original code, the running time increases dramatically when compared with more traditional methods of testing
+            - the only way to guarantee the corectness and robustness of the implementation is by generating large numbers of mutant programs which are as varied as possible (the alterations are evenly spread throughout the source code)
+    
+    5) Tools frequently used to automatically genereate mutant programs (for Java):
+        Jester (http://jester.sourceforge.net/)
+            Documentation:
+                *) https://web.archive.org/web/20070209020730/http://www-128.ibm.com/developerworks/library/j-jester/
+                *) https://web.archive.org/web/20050518095534/https://www.agilealliance.org/articles/articles/Jester.pdf
+        PIT (http://pitest.org/downloads/)
+            Documentation:
+                *) http://pitest.org/quickstart/commandline/
+                *) http://pitest.org/quickstart/basic_concepts/
+        Major (http://mutation-testing.org/downloads/)
+            Documentation:
+                *) http://mutation-testing.org/doc/major.pdf
+        µJava (https://cs.gmu.edu/~offutt/mujava/#Links)
+            Documentation:
+                *) https://cs.gmu.edu/~offutt/mujava/#Install
+        JMuTE (https://sourceforge.net/projects/jmute/)
+            Documentation:
+                *) http://jmute.sourceforge.net/features.html
+                *) http://jmute.sourceforge.net/faq.html
+        Jumble (https://sourceforge.net/projects/jumble/files/)
+            Documentation:
+                *) http://jumble.sourceforge.net/index.html
+                *) http://jumble.sourceforge.net/mutations.html
+        Judy (http://madeyski.e-informatyka.pl/tools/judy/)
+            Documentation:
+                *) http://madeyski.e-informatyka.pl/download/tools/judy/JudyUserGuide.pdf
+        
+    6) Additional information (theoretical underpinnings, case studies, comparisons and analyses of mutation testing tools, methods to avoid equivalent mutants etc.):
+        https://cs.gmu.edu/~offutt/rsrch/mut.html
+        https://www.inf.ed.ac.uk/teaching/courses/st/2011-12/Resource-folder/09_mutation.pdf
+        http://www.cs.colostate.edu/~bieman/Pubs/AlexanderBiemanGhoshJiISSRE02.pdf
+        http://www.irisa.fr/manifestations/2006/Mutation2006/papers/14_Final_version.pdf
+        http://madeyski.e-informatyka.pl/download/Madeyski10b.pdf
+        http://madeyski.e-informatyka.pl/download/Madeyski13TSE.pdf
