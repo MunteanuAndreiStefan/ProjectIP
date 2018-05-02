@@ -18,6 +18,7 @@ public class Delete {
             public void handle(ActionEvent event) {
                 System.out.println("Va sterge conceptul selectat.");
                 System.out.println("Concept selectat : " + list.getSelectionModel().getSelectedItem());
+                list.getItems().remove(list.getSelectionModel().getSelectedIndex());
             }
         });
     }

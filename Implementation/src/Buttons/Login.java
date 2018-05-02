@@ -16,7 +16,6 @@ public class Login {
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("Butonul va face pop-up la un formular pentru crearea unui cont, apoi acesta va fi inlocuit cu butonul de upload");
-
             }
         });
     }
