@@ -10,12 +10,10 @@ import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage){
         ScrollPane pane = new ScrollPane();
-
-        ListView<String> list = new ListView<String>();
+        ListView<String> list = new ListView<>();
         ObservableList<String> items = FXCollections.observableArrayList("Concept 1", "Concept 2", "Concept 3", "Concept 4");
         list.setItems(items);
         list.setPrefHeight(600);
@@ -28,7 +26,7 @@ public class Main extends Application {
         pane.setLayoutY(50);
         //
         Group group = new Group();
-        new Login().setButton(group);
+        new Login().setButton(group, primaryStage, items);
         new Load().setButton(group, primaryStage);
         new View().setButton(group, list);
         new Delete().setButton(group, list);

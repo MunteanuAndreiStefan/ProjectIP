@@ -1,0 +1,10 @@
+{
+  "attachement path": "path",
+  "class" : "Insecte", 
+  "found concept" : "Albina", 
+  "Metadata" : "metadata", 
+  "Others" : "Musca", 
+  "Class matching" : "90",
+  "Concept matching" : "80", 
+  "Others matching" : "30"
+}
