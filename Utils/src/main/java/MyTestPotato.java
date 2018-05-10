@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public class MyTestPotato extends ObjectSerializable implements Serializable
+public class MyTestPotato implements Serializable
 {
     private int cartof;
 
