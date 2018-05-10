@@ -1,6 +1,5 @@
 package Buttons;
 
-import gvjava.org.json.JSONException;
 import javafx.beans.binding.ListBinding;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
