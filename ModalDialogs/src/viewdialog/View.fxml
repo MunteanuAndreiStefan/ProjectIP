@@ -13,5 +13,10 @@
     <children>
         <Button text="View concept" onAction="#handleViewConcept" fx:id="viewConceptButton" /> 
         <Button text="Close" onAction="#handleViewDialogClose" fx:id="viewDialogCloseButton" />  
+        <FlowPane id="Pane2" alignment="CENTER">
+            <children> 
+                <Label fx:id="label"></Label>
+            </children>
+        </FlowPane>
     </children>
 </FlowPane>

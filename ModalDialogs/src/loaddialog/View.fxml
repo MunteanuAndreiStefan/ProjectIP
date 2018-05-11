@@ -13,5 +13,10 @@
     </padding>
     <children>
         <Button text="Load" onAction="#handleLoad" fx:id="loadButton"/> 
+        <FlowPane id="Pane2" alignment="CENTER">
+            <children> 
+                <Label fx:id="label"></Label>
+            </children>
+        </FlowPane>
     </children>
 </FlowPane>

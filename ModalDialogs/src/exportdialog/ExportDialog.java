@@ -20,12 +20,14 @@ public class ExportDialog extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("View.fxml"));
-        Parent root = fxmlLoader.load();  
+        Parent root = fxmlLoader.load(); 
+        Controller controller=fxmlLoader.getController();
         Scene scene = new Scene(root);
         String title="Export";
         stage.setTitle(title);
         stage.setResizable(false);
         stage.setScene(scene);
+        controller.setLabel("");
         stage.show();
     }
 

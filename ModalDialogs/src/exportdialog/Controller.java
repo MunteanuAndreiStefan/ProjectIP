@@ -12,6 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -23,6 +24,9 @@ public class Controller implements Initializable {
     
     @FXML
     private Button exportButton;
+    
+    @FXML 
+    private Label label;
     
     @FXML
     private File handleExport(ActionEvent event) {
@@ -38,5 +42,9 @@ public class Controller implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+    public void setLabel(String text){
+        label.setText(text);
+    }
     
 }

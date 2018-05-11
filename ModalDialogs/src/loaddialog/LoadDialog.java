@@ -21,10 +21,12 @@ public class LoadDialog extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("View.fxml"));
         Parent root = fxmlLoader.load();  
+        Controller controller=fxmlLoader.getController();
         Scene scene = new Scene(root);
         String title="Load";
         stage.setTitle(title);
         stage.setResizable(false);
+        controller.setLabel("");
         stage.setScene(scene);
         stage.show();
     }

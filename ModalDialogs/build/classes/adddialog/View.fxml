@@ -7,12 +7,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 
-<FlowPane id="AddDialogPane" xmlns:fx="http://javafx.com/fxml" fx:controller="adddialog.Controller" prefWidth="300" alignment="CENTER" hgap="20">
+<FlowPane id="AddDialogPane" xmlns:fx="http://javafx.com/fxml" fx:controller="adddialog.Controller" prefWidth="300" alignment="CENTER" hgap="20" vgap="10">
     <padding>
-             <Insets top="25" right="25" bottom="25" left="25"/>
+        <Insets top="25" right="25" bottom="25" left="25"/>
     </padding> 
     <children>
         <Button text="Add new information" onAction="#handleAddConcept" fx:id="addConceptButton"/>
         <Button text="Close" onAction="#handleAddDialogClose" fx:id="addDialogCloseButton"/>
+        <FlowPane id="Pane2" alignment="CENTER">
+            <children> 
+                <Label fx:id="label"></Label>
+            </children>
+        </FlowPane>
     </children>
 </FlowPane>

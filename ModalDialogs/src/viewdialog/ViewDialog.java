@@ -20,11 +20,13 @@ public class ViewDialog extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("View.fxml"));
-        Parent root = fxmlLoader.load();  
+        Parent root = fxmlLoader.load();
+        Controller controller=fxmlLoader.getController();
         Scene scene = new Scene(root);
         String title="View";
         stage.setTitle(title);
         stage.setResizable(false);
+        controller.setLabel("");
         stage.setScene(scene);
         stage.show();
     }

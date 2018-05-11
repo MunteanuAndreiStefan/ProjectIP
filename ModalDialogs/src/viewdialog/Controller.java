@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 /**
@@ -30,6 +31,9 @@ public class Controller implements Initializable {
     }
     
     @FXML 
+    private Label label;
+    
+    @FXML 
     private void handleViewDialogClose(ActionEvent event){
         Stage stage = (Stage) viewDialogCloseButton.getScene().getWindow();
         stage.close();
@@ -40,4 +44,8 @@ public class Controller implements Initializable {
         // TODO
     }    
     
+    public void setLabel(String text){
+        label.setText(text);
+    }
+   
 }
