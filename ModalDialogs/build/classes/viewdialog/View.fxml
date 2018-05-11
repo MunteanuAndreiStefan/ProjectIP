@@ -5,8 +5,11 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
-<FlowPane id="ViewDialogPane" xmlns:fx="http://javafx.com/fxml" fx:controller="viewdialog.Controller" prefWidth="500" alignment="CENTER" hgap="20">
+<?import javafx.geometry.Insets?>
+<FlowPane id="ViewDialogPane" xmlns:fx="http://javafx.com/fxml" fx:controller="viewdialog.Controller" prefWidth="300" alignment="CENTER" hgap="20">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>   
     <children>
         <Button text="View concept" onAction="#handleViewConcept" fx:id="viewConceptButton" /> 
         <Button text="Close" onAction="#handleViewDialogClose" fx:id="viewDialogCloseButton" />  

@@ -5,10 +5,13 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
 
-<FlowPane id="LoadDialogPane" xmlns:fx="http://javafx.com/fxml" fx:controller="loaddialog.Controller" prefWidth="500" hgap="20" alignment="CENTER" >
+<FlowPane id="LoadDialogPane" xmlns:fx="http://javafx.com/fxml" fx:controller="loaddialog.Controller" prefWidth="250" hgap="20" alignment="CENTER" >
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
     <children>
-        <Button text="Load file for analysis" onAction="#handleLoadForAnalysis" fx:id="loadForAnalysisButton"/> 
-        <Button text="Load memory file" onAction="#handleLoadMemory" fx:id="loadMemoryButton"/>
+        <Button text="Load" onAction="#handleLoad" fx:id="loadButton"/> 
     </children>
 </FlowPane>

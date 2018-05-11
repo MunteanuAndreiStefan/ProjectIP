@@ -27,6 +27,8 @@ public class Controller implements Initializable {
     @FXML
     private File handleExport(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
+        //FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
+        //fileChooser.getExtensionFilters().add(extFilter);
         Stage stage = (Stage) exportButton.getScene().getWindow();
         File file = fileChooser.showSaveDialog(stage);
         return file;

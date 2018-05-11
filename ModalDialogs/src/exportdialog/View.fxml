@@ -6,7 +6,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.stage.*?>
+<?import javafx.geometry.Insets?>
 <FlowPane id="ExportDialogPane" xmlns:fx="http://javafx.com/fxml" fx:controller="exportdialog.Controller" prefWidth="250" alignment="CENTER">
+    <padding>
+        <Insets top="25" right="25" bottom="25" left="25"/>
+    </padding>
     <children>
         <Button text="Export" onAction="#handleExport" fx:id="exportButton" />
     </children>

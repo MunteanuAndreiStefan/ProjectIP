@@ -19,11 +19,13 @@ public class AddDialog extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
-        
+        FXMLLoader fxmlLoader=new FXMLLoader(getClass().getResource("View.fxml"));
+        Parent root = fxmlLoader.load();  
         Scene scene = new Scene(root);
-        
+        String title="Add";
+        stage.setTitle(title);
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
