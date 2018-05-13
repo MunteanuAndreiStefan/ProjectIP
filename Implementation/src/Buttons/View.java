@@ -14,7 +14,7 @@ public class View {
     public void setButton(Group group, ListView<String> list) {
         Button view = new Button();
         view.setText("View details");
-        view.setLayoutX(240);
+        view.setLayoutX(360);
         view.setLayoutY(600);
         group.getChildren().add(view);
         view.setOnAction(new EventHandler<ActionEvent>() {

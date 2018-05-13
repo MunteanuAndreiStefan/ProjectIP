@@ -1,4 +1,4 @@
-package sample;
+//package sample;
 import Buttons.*;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -22,18 +22,19 @@ public class Main extends Application {
         pane.prefWidthProperty().bind(list.widthProperty());
         pane.prefHeightProperty().bind(list.heightProperty());
         pane.setContent(list);
-        pane.setLayoutX(650);
+        pane.setLayoutX(750);
         pane.setLayoutY(50);
         //
         Group group = new Group();
         new Login().setButton(group, primaryStage, items);
-        new Load().setButton(group, primaryStage);
+        new Load().setButton(group, primaryStage, items);
+        new Save().setButton(group, primaryStage, items);
         new View().setButton(group, list);
         new Delete().setButton(group, list);
         new Modify().setButton(group, list);
         //
         group.getChildren().add(pane);
-        Scene scene = new Scene(group, 1000, 700);
+        Scene scene = new Scene(group, 1100, 700);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

@@ -15,7 +15,7 @@ public class Modify {
     public void setButton(Group group, ListView<String> list) {
         Button modify = new Button();
         modify.setText("Modify");
-        modify.setLayoutX(480);
+        modify.setLayoutX(600);
         modify.setLayoutY(600);
         group.getChildren().add(modify);
         modify.setOnAction(new EventHandler<ActionEvent>() {

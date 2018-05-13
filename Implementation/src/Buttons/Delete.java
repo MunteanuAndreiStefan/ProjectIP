@@ -10,7 +10,7 @@ public class Delete {
     public void setButton(Group group, ListView<String> list) {
         Button delete = new Button();
         delete.setText("Delete concept");
-        delete.setLayoutX(350);
+        delete.setLayoutX(470);
         delete.setLayoutY(600);
         group.getChildren().add(delete);
         delete.setOnAction(new EventHandler<ActionEvent>() {
