@@ -1,0 +1,194 @@
+AORB_1:33:void_coin(int):credit + coin => credit * coin
+AORB_2:33:void_coin(int):credit + coin => credit / coin
+AORB_3:33:void_coin(int):credit + coin => credit % coin
+AORB_4:33:void_coin(int):credit + coin => credit - coin
+AORB_5:45:int_getChoc(java.lang.StringBuffer):credit - 90 => credit * 90
+AORB_6:45:int_getChoc(java.lang.StringBuffer):credit - 90 => credit / 90
+AORB_7:45:int_getChoc(java.lang.StringBuffer):credit - 90 => credit % 90
+AORB_8:45:int_getChoc(java.lang.StringBuffer):credit - 90 => credit + 90
+AOIU_1:30:void_coin(int):credit => -credit
+AOIU_2:33:void_coin(int):credit => -credit
+AOIU_3:43:int_getChoc(java.lang.StringBuffer):change => -change
+AOIU_4:45:int_getChoc(java.lang.StringBuffer):credit => -credit
+AOIU_5:48:int_getChoc(java.lang.StringBuffer):change => -change
+AOIU_6:53:void_addChoc(java.lang.String):MAX => -MAX
+AOIU_7:62:int_getCredit():credit => -credit
+AOIS_1:27:void_coin(int):coin => ++coin
+AOIS_2:27:void_coin(int):coin => --coin
+AOIS_3:27:void_coin(int):coin => coin++
+AOIS_4:27:void_coin(int):coin => coin--
+AOIS_5:27:void_coin(int):coin => ++coin
+AOIS_6:27:void_coin(int):coin => --coin
+AOIS_7:27:void_coin(int):coin => coin++
+AOIS_8:27:void_coin(int):coin => coin--
+AOIS_9:27:void_coin(int):coin => ++coin
+AOIS_10:27:void_coin(int):coin => --coin
+AOIS_11:27:void_coin(int):coin => coin++
+AOIS_12:27:void_coin(int):coin => coin--
+AOIS_13:30:void_coin(int):credit => ++credit
+AOIS_14:30:void_coin(int):credit => --credit
+AOIS_15:30:void_coin(int):credit => credit++
+AOIS_16:30:void_coin(int):credit => credit--
+AOIS_17:33:void_coin(int):credit => ++credit
+AOIS_18:33:void_coin(int):credit => --credit
+AOIS_19:33:void_coin(int):credit => credit++
+AOIS_20:33:void_coin(int):credit => credit--
+AOIS_21:33:void_coin(int):coin => ++coin
+AOIS_22:33:void_coin(int):coin => --coin
+AOIS_23:33:void_coin(int):coin => coin++
+AOIS_24:33:void_coin(int):coin => coin--
+AOIS_25:40:int_getChoc(java.lang.StringBuffer):credit => ++credit
+AOIS_26:40:int_getChoc(java.lang.StringBuffer):credit => --credit
+AOIS_27:40:int_getChoc(java.lang.StringBuffer):credit => credit++
+AOIS_28:40:int_getChoc(java.lang.StringBuffer):credit => credit--
+AOIS_29:43:int_getChoc(java.lang.StringBuffer):change => change++
+AOIS_30:43:int_getChoc(java.lang.StringBuffer):change => change--
+AOIS_31:45:int_getChoc(java.lang.StringBuffer):credit => ++credit
+AOIS_32:45:int_getChoc(java.lang.StringBuffer):credit => --credit
+AOIS_33:45:int_getChoc(java.lang.StringBuffer):credit => credit++
+AOIS_34:45:int_getChoc(java.lang.StringBuffer):credit => credit--
+AOIS_35:48:int_getChoc(java.lang.StringBuffer):change => change++
+AOIS_36:48:int_getChoc(java.lang.StringBuffer):change => change--
+AOIS_37:53:void_addChoc(java.lang.String):MAX => ++MAX
+AOIS_38:53:void_addChoc(java.lang.String):MAX => --MAX
+AOIS_39:53:void_addChoc(java.lang.String):MAX => MAX++
+AOIS_40:53:void_addChoc(java.lang.String):MAX => MAX--
+AOIS_41:62:int_getCredit():credit => credit++
+AOIS_42:62:int_getCredit():credit => credit--
+ROR_1:27:void_coin(int): coin != 10  =>   coin > 10
+ROR_2:27:void_coin(int): coin != 10  =>   coin >= 10
+ROR_3:27:void_coin(int): coin != 10  =>   coin < 10
+ROR_4:27:void_coin(int): coin != 10  =>   coin <= 10
+ROR_5:27:void_coin(int): coin != 10  =>   coin == 10
+ROR_6:27:void_coin(int): coin != 10  =>   true
+ROR_7:27:void_coin(int): coin != 10  =>   false
+ROR_8:27:void_coin(int): coin != 25  =>   coin > 25
+ROR_9:27:void_coin(int): coin != 25  =>   coin >= 25
+ROR_10:27:void_coin(int): coin != 25  =>   coin < 25
+ROR_11:27:void_coin(int): coin != 25  =>   coin <= 25
+ROR_12:27:void_coin(int): coin != 25  =>   coin == 25
+ROR_13:27:void_coin(int): coin != 25  =>   true
+ROR_14:27:void_coin(int): coin != 25  =>   false
+ROR_15:27:void_coin(int): coin != 100  =>   coin > 100
+ROR_16:27:void_coin(int): coin != 100  =>   coin >= 100
+ROR_17:27:void_coin(int): coin != 100  =>   coin < 100
+ROR_18:27:void_coin(int): coin != 100  =>   coin <= 100
+ROR_19:27:void_coin(int): coin != 100  =>   coin == 100
+ROR_20:27:void_coin(int): coin != 100  =>   true
+ROR_21:27:void_coin(int): coin != 100  =>   false
+ROR_22:30:void_coin(int): credit >= 90  =>   credit > 90
+ROR_23:30:void_coin(int): credit >= 90  =>   credit < 90
+ROR_24:30:void_coin(int): credit >= 90  =>   credit <= 90
+ROR_25:30:void_coin(int): credit >= 90  =>   credit == 90
+ROR_26:30:void_coin(int): credit >= 90  =>   credit != 90
+ROR_27:30:void_coin(int): credit >= 90  =>   true
+ROR_28:30:void_coin(int): credit >= 90  =>   false
+ROR_29:40:int_getChoc(java.lang.StringBuffer): credit < 90  =>   credit > 90
+ROR_30:40:int_getChoc(java.lang.StringBuffer): credit < 90  =>   credit >= 90
+ROR_31:40:int_getChoc(java.lang.StringBuffer): credit < 90  =>   credit <= 90
+ROR_32:40:int_getChoc(java.lang.StringBuffer): credit < 90  =>   credit == 90
+ROR_33:40:int_getChoc(java.lang.StringBuffer): credit < 90  =>   credit != 90
+ROR_34:40:int_getChoc(java.lang.StringBuffer): credit < 90  =>   true
+ROR_35:40:int_getChoc(java.lang.StringBuffer): credit < 90  =>   false
+ROR_36:40:int_getChoc(java.lang.StringBuffer): stock.size() <= 0  =>   stock.size() > 0
+ROR_37:40:int_getChoc(java.lang.StringBuffer): stock.size() <= 0  =>   stock.size() >= 0
+ROR_38:40:int_getChoc(java.lang.StringBuffer): stock.size() <= 0  =>   stock.size() < 0
+ROR_39:40:int_getChoc(java.lang.StringBuffer): stock.size() <= 0  =>   stock.size() == 0
+ROR_40:40:int_getChoc(java.lang.StringBuffer): stock.size() <= 0  =>   stock.size() != 0
+ROR_41:40:int_getChoc(java.lang.StringBuffer): stock.size() <= 0  =>   true
+ROR_42:40:int_getChoc(java.lang.StringBuffer): stock.size() <= 0  =>   false
+ROR_43:53:void_addChoc(java.lang.String): stock.size() >= MAX  =>   stock.size() > MAX
+ROR_44:53:void_addChoc(java.lang.String): stock.size() >= MAX  =>   stock.size() < MAX
+ROR_45:53:void_addChoc(java.lang.String): stock.size() >= MAX  =>   stock.size() <= MAX
+ROR_46:53:void_addChoc(java.lang.String): stock.size() >= MAX  =>   stock.size() == MAX
+ROR_47:53:void_addChoc(java.lang.String): stock.size() >= MAX  =>   stock.size() != MAX
+ROR_48:53:void_addChoc(java.lang.String): stock.size() >= MAX  =>   true
+ROR_49:53:void_addChoc(java.lang.String): stock.size() >= MAX  =>   false
+COR_1:27:void_coin(int): coin != 10 && coin != 25  =>   coin != 10 || coin != 25
+COR_2:27:void_coin(int): coin != 10 && coin != 25  =>   coin != 10 ^ coin != 25
+COR_3:27:void_coin(int): coin != 10 && coin != 25 && coin != 100  =>   coin != 10 && coin != 25 || coin != 100
+COR_4:27:void_coin(int): coin != 10 && coin != 25 && coin != 100  =>   (coin != 10 && coin != 25) ^ coin != 100
+COR_5:40:int_getChoc(java.lang.StringBuffer): credit < 90 || stock.size() <= 0  =>   credit < 90 && stock.size() <= 0
+COR_6:40:int_getChoc(java.lang.StringBuffer): credit < 90 || stock.size() <= 0  =>   credit < 90 ^ stock.size() <= 0
+COI_1:27:void_coin(int): coin != 10  =>  !(coin != 10)
+COI_2:27:void_coin(int): coin != 25  =>  !(coin != 25)
+COI_3:27:void_coin(int): coin != 10 && coin != 25  =>  !(coin != 10 && coin != 25)
+COI_4:27:void_coin(int): coin != 100  =>  !(coin != 100)
+COI_5:27:void_coin(int): coin != 10 && coin != 25 && coin != 100  =>  !(coin != 10 && coin != 25 && coin != 100)
+COI_6:30:void_coin(int): credit >= 90  =>  !(credit >= 90)
+COI_7:40:int_getChoc(java.lang.StringBuffer): credit < 90  =>  !(credit < 90)
+COI_8:40:int_getChoc(java.lang.StringBuffer): stock.size() <= 0  =>  !(stock.size() <= 0)
+COI_9:40:int_getChoc(java.lang.StringBuffer): credit < 90 || stock.size() <= 0  =>  !(credit < 90 || stock.size() <= 0)
+COI_10:53:void_addChoc(java.lang.String): stock.size() >= MAX  =>  !(stock.size() >= MAX)
+LOI_1:27:void_coin(int):coin => ~coin
+LOI_2:27:void_coin(int):coin => ~coin
+LOI_3:27:void_coin(int):coin => ~coin
+LOI_4:30:void_coin(int):credit => ~credit
+LOI_5:33:void_coin(int):credit => ~credit
+LOI_6:33:void_coin(int):coin => ~coin
+LOI_7:40:int_getChoc(java.lang.StringBuffer):credit => ~credit
+LOI_8:43:int_getChoc(java.lang.StringBuffer):change => ~change
+LOI_9:45:int_getChoc(java.lang.StringBuffer):credit => ~credit
+LOI_10:48:int_getChoc(java.lang.StringBuffer):change => ~change
+LOI_11:53:void_addChoc(java.lang.String):MAX => ~MAX
+LOI_12:62:int_getCredit():credit => ~credit
+SDL_1:22:VendingMachine(): credit = 0; stock = new java.util.LinkedList();  =>   stock = new java.util.LinkedList();
+SDL_2:22:VendingMachine(): credit = 0; stock = new java.util.LinkedList();  =>   credit = 0;
+SDL_3:32:void_coin(int): if (coin != 10 && coin != 25 && coin != 100) {     return; } if (credit >= 90) {     return; } credit = credit + coin; return;  =>   if (credit >= 90) {     return; } credit = credit + coin; return;
+SDL_4:32:void_coin(int): if (coin != 10 && coin != 25 && coin != 100) {     return; } if (credit >= 90) {     return; } credit = credit + coin; return;  =>   if (coin != 10 && coin != 25 && coin != 100) {     return; } credit = credit + coin; return;
+SDL_5:34:void_coin(int): if (coin != 10 && coin != 25 && coin != 100) {     return; } if (credit >= 90) {     return; } credit = credit + coin; return;  =>   if (coin != 10 && coin != 25 && coin != 100) {     return; } if (credit >= 90) {     return; } return;
+SDL_6:30:void_coin(int): if (coin != 10 && coin != 25 && coin != 100) {     return; }  =>   if (true) {     return; }
+SDL_7:33:void_coin(int): if (credit >= 90) {     return; }  =>   if (true) {     return; }
+SDL_8:44:int_getChoc(java.lang.StringBuffer): int change; if (credit < 90 || stock.size() <= 0) {     change = 0;     choc.replace( 0, choc.length(), \"\" );     return change; } change = credit - 90; credit = 0; choc.replace( 0, choc.length(), (java.lang.String) stock.removeFirst() ); return change;  =>   int change; change = credit - 90; credit = 0; choc.replace( 0, choc.length(), (java.lang.String) stock.removeFirst() ); return change;
+SDL_9:48:int_getChoc(java.lang.StringBuffer): int change; if (credit < 90 || stock.size() <= 0) {     change = 0;     choc.replace( 0, choc.length(), \"\" );     return change; } change = credit - 90; credit = 0; choc.replace( 0, choc.length(), (java.lang.String) stock.removeFirst() ); return change;  =>   int change; if (credit < 90 || stock.size() <= 0) {     change = 0;     choc.replace( 0, choc.length(), \"\" );     return change; } credit = 0; choc.replace( 0, choc.length(), (java.lang.String) stock.removeFirst() ); return change;
+SDL_10:48:int_getChoc(java.lang.StringBuffer): int change; if (credit < 90 || stock.size() <= 0) {     change = 0;     choc.replace( 0, choc.length(), \"\" );     return change; } change = credit - 90; credit = 0; choc.replace( 0, choc.length(), (java.lang.String) stock.removeFirst() ); return change;  =>   int change; if (credit < 90 || stock.size() <= 0) {     change = 0;     choc.replace( 0, choc.length(), \"\" );     return change; } change = credit - 90; choc.replace( 0, choc.length(), (java.lang.String) stock.removeFirst() ); return change;
+SDL_11:48:int_getChoc(java.lang.StringBuffer): int change; if (credit < 90 || stock.size() <= 0) {     change = 0;     choc.replace( 0, choc.length(), \"\" );     return change; } change = credit - 90; credit = 0; choc.replace( 0, choc.length(), (java.lang.String) stock.removeFirst() ); return change;  =>   int change; if (credit < 90 || stock.size() <= 0) {     change = 0;     choc.replace( 0, choc.length(), \"\" );     return change; } change = credit - 90; credit = 0; return change;
+SDL_12:43:int_getChoc(java.lang.StringBuffer): change = 0; choc.replace( 0, choc.length(), \"\" ); return change;  =>   choc.replace( 0, choc.length(), \"\" ); return change;
+SDL_13:43:int_getChoc(java.lang.StringBuffer): change = 0; choc.replace( 0, choc.length(), \"\" ); return change;  =>   change = 0; return change;
+SDL_14:45:int_getChoc(java.lang.StringBuffer): if (credit < 90 || stock.size() <= 0) {     change = 0;     choc.replace( 0, choc.length(), \"\" );     return change; }  =>   if (true) {     change = 0;     choc.replace( 0, choc.length(), \"\" );     return change; }
+SDL_15:44:int_getChoc(java.lang.StringBuffer): return change;  =>   return 0;
+SDL_16:49:int_getChoc(java.lang.StringBuffer): return change;  =>   return 0;
+SDL_17:55:void_addChoc(java.lang.String): if (stock.size() >= MAX) {     return; } stock.add( choc ); return;  =>   stock.add( choc ); return;
+SDL_18:57:void_addChoc(java.lang.String): if (stock.size() >= MAX) {     return; } stock.add( choc ); return;  =>   if (stock.size() >= MAX) {     return; } return;
+SDL_19:56:void_addChoc(java.lang.String): if (stock.size() >= MAX) {     return; }  =>   if (true) {     return; }
+SDL_20:63:int_getCredit(): return credit;  =>   return 0;
+VDL_1:27:void_coin(int):coin != 10 => 10
+VDL_2:27:void_coin(int):coin != 25 => 25
+VDL_3:27:void_coin(int):coin != 100 => 100
+VDL_4:30:void_coin(int):credit >= 90 => 90
+VDL_5:33:void_coin(int):credit + coin => coin
+VDL_6:33:void_coin(int):credit + coin => credit
+VDL_7:40:int_getChoc(java.lang.StringBuffer):credit < 90 => 90
+VDL_8:45:int_getChoc(java.lang.StringBuffer):credit - 90 => 90
+VDL_9:53:void_addChoc(java.lang.String):stock.size() >= MAX => stock.size()
+ODL_1:27:void_coin(int):coin != 10 => coin
+ODL_2:27:void_coin(int):coin != 10 => 10
+ODL_3:27:void_coin(int):coin != 25 => coin
+ODL_4:27:void_coin(int):coin != 25 => 25
+ODL_5:27:void_coin(int):coin != 10 && coin != 25 => coin != 10
+ODL_6:27:void_coin(int):coin != 10 && coin != 25 => coin != 25
+ODL_7:27:void_coin(int):coin != 100 => coin
+ODL_8:27:void_coin(int):coin != 100 => 100
+ODL_9:27:void_coin(int):coin != 10 && coin != 25 && coin != 100 => coin != 10 && coin != 25
+ODL_10:27:void_coin(int):coin != 10 && coin != 25 && coin != 100 => coin != 100
+ODL_11:30:void_coin(int):credit >= 90 => credit
+ODL_12:30:void_coin(int):credit >= 90 => 90
+ODL_13:33:void_coin(int):credit + coin => credit
+ODL_14:33:void_coin(int):credit + coin => coin
+ODL_15:40:int_getChoc(java.lang.StringBuffer):credit < 90 => credit
+ODL_16:40:int_getChoc(java.lang.StringBuffer):credit < 90 => 90
+ODL_17:40:int_getChoc(java.lang.StringBuffer):stock.size() <= 0 => stock.size()
+ODL_18:40:int_getChoc(java.lang.StringBuffer):stock.size() <= 0 => 0
+ODL_19:40:int_getChoc(java.lang.StringBuffer):credit < 90 || stock.size() <= 0 => credit < 90
+ODL_20:40:int_getChoc(java.lang.StringBuffer):credit < 90 || stock.size() <= 0 => stock.size() <= 0
+ODL_21:45:int_getChoc(java.lang.StringBuffer):credit - 90 => credit
+ODL_22:45:int_getChoc(java.lang.StringBuffer):credit - 90 => 90
+ODL_23:53:void_addChoc(java.lang.String):stock.size() >= MAX => stock.size()
+ODL_24:53:void_addChoc(java.lang.String):stock.size() >= MAX => MAX
+CDL_1:27:void_coin(int):coin != 10 => coin
+CDL_2:27:void_coin(int):coin != 25 => coin
+CDL_3:27:void_coin(int):coin != 100 => coin
+CDL_4:30:void_coin(int):credit >= 90 => credit
+CDL_5:40:int_getChoc(java.lang.StringBuffer):credit < 90 => credit
+CDL_6:40:int_getChoc(java.lang.StringBuffer):stock.size() <= 0 => stock.size()
+CDL_7:45:int_getChoc(java.lang.StringBuffer):credit - 90 => credit

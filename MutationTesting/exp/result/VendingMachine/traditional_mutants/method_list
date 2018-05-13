@@ -1,0 +1,6 @@
+VendingMachine()
+void_coin(int)
+int_getChoc(java.lang.StringBuffer)
+void_addChoc(java.lang.String)
+int_getCredit()
+java.util.LinkedList_getStock()
