@@ -1,0 +1,10 @@
+{
+  "Attachement path": "path",
+  "Class" : "Mammal", 
+  "Concept" : "Mouse", 
+  "Metadata" : [ "Latitude": 38.53133, "Longitude": 0.0255446 ], 
+  "Class matching" : "0.93",
+  "Concept matching" : "0.75", 
+  "Others" : [ { "name": "Elephant", "matching": 0.0255446 }, { "name": "Rodents", "matching": 0.993063 } ],
+  "Description" : "Two mices sitting on a chair and eating cheetos"
+}
