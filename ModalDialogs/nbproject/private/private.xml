@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/andrew/Documents/NetBeansProjects/ModalDialogs/src/adddialog/Controller.java</file>
-            <file>file:/C:/Users/andrew/Documents/NetBeansProjects/ModalDialogs/src/adddialog/View.fxml</file>
-            <file>file:/C:/Users/andrew/Documents/NetBeansProjects/ModalDialogs/src/adddialog/AddDialog.java</file>
+            <file>file:/C:/Users/andrew/Documents/NetBeansProjects/ModalDialogs/src/exportdialog/ExportDialog.java</file>
+            <file>file:/C:/Users/andrew/Documents/NetBeansProjects/ModalDialogs/src/loaddialog/LoadDialog.java</file>
+            <file>file:/C:/Users/andrew/Documents/NetBeansProjects/ModalDialogs/src/loaddialog/Controller.java</file>
+            <file>file:/C:/Users/andrew/Documents/NetBeansProjects/ModalDialogs/src/exportdialog/Controller.java</file>
         </group>
     </open-files>
 </project-private>

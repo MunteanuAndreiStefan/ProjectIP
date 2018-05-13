@@ -31,6 +31,10 @@ public class Controller implements Initializable {
     @FXML
     private File handleLoad(ActionEvent event){
         FileChooser fileChooser = new FileChooser();
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("TXT files (*.txt)", "*.txt");
+        fileChooser.getExtensionFilters().add(extFilter);
+        extFilter = new FileChooser.ExtensionFilter("IMG files(*.gif,*.jpg,*.png)","*.gif","*.jpg","*.png");
+        fileChooser.getExtensionFilters().add(extFilter);
         Stage stage = (Stage) loadButton.getScene().getWindow();
         File file = fileChooser.showOpenDialog(stage);
         return file;
