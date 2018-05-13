@@ -1,4 +1,4 @@
-package sample;
+package utils;
 import java.io.*;
 
 public class ObjectSerializable
