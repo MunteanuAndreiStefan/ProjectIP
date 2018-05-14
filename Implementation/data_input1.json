@@ -1,10 +1,18 @@
 {
-  "attachement path": "path",
-  "class" : "Insecte", 
-  "found concept" : "Soarece", 
-  "Metadata" : "metadata", 
-  "Others" : "Elefant", 
-  "Class matching" : "90",
-  "Concept matching" : "60", 
-  "Others matching" : "30"
+	"Attachement path": "path",
+	"Class": "Mamifer",
+	"Found concept": "Maimuta",
+	"Metadata": [{
+		"Latitude": 38.53133,
+		"Longitude": 0.0255446
+	}],
+	"Class matching": 93.0,
+	"Concept matching": 25.0,
+	"Others matching": [{
+		"name": "Elefant",
+		"matching": 0.0255446
+	}, {
+		"name": "Rozatoare",
+		"matching": 0.993063
+	}]
 }

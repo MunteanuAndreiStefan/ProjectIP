@@ -15,10 +15,9 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import sample.ConceptPopup;
 import sample.Decision;
+import sample.WekaDecision;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,15 +50,59 @@ public class Upload {
                     jsonObjects.add(jsonObject);
                 }
                 try {
-                    Decision decision = new Decision();
-                    Pair<String, Double> ans = decision.check(jsonObjects, items);
-                    items.add(ans.getKey());
+                    //Decision decision = new Decision();
+                    //Pair<String, Double> ans = decision.check(jsonObjects, items);
+                    //items.add(ans.getKey());
                     //
-                    new ConceptPopup(group, ans.getKey(), ans.getValue());
+                    //new ConceptPopup(group, ans.getKey(), ans.getValue());
+                    //
+                    //Weka classifier
+                    String forWekaFile = "forWekaFile.txt";
+                    Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(forWekaFile), "utf-8"));
+                    //
+                        //To artff
+                        String dataToWrite = "";
+                        dataToWrite += "@relation animals" + '\n' + '\n';
+                        dataToWrite += "@attribute class {Mamifer, Insecta}" + '\n';
+                        dataToWrite += "@attribute classMatching {low, high}" + '\n';
+                        dataToWrite += "@attribute concept {Soarece, Albina, Caine, Motan, Urs, Maimuta}" + '\n';
+                        dataToWrite += "@attribute conceptMatching {low, high}" + '\n' + '\n';
+                        //
+                        dataToWrite += "@data" + '\n';
+                        writer.write(dataToWrite);
+                        for(int i=0;i<jsonObjects.size();i++){
+                            String classFound = (String)jsonObjects.get(i).get("Class");
+                            String concept = (String)jsonObjects.get(i).get("Found concept");
+                            Double classMatching = (Double) jsonObjects.get(i).get("Class matching");
+                            Double conceptMatching = (Double) jsonObjects.get(i).get("Concept matching");
+                            String matchingClassIntensivity;
+                            String matchingConceptIntensivity;
+                            if(classMatching < 50)
+                                    matchingClassIntensivity = "low";
+                            else
+                                    matchingClassIntensivity = "high";
+                            //
+                            if(conceptMatching < 50)
+                                    matchingConceptIntensivity = "low";
+                            else
+                                    matchingConceptIntensivity = "high";
+                            String line = classFound + "," + matchingClassIntensivity + "," + concept + "," + matchingConceptIntensivity + '\n';
+                            writer.write(line);
+                            //System.out.println(classFound + " " + concept + " " + classMatching + " " + conceptMatching);
+                        }
+
+                    //
+
+                    //writer.write("Saa");
+                    writer.close();
+                    WekaDecision wekaDecision = new WekaDecision();
+                    wekaDecision.classify(forWekaFile);
                     //
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (ParseException e) {
+                    e.printStackTrace();
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
