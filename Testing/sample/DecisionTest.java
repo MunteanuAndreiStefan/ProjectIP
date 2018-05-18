@@ -54,7 +54,7 @@ public class DecisionTest {
         Pair<String, Double> expResult = new Pair<>("Urs", 90.0);
         Pair<String, Double> result=instance.check(objects, items);
         assertEquals(result,expResult);
-        // TODO review the generated test code and remove the default call to fail.
+       
     }
     
 }
