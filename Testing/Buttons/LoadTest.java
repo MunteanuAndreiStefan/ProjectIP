@@ -1,38 +1,43 @@
-package Buttons;
+package Testing.Buttons;
 
+import Buttons.Load;
 import org.junit.Test;
+import sample.Decision;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 import static org.junit.Assert.*;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 
 public class LoadTest {
 
 
+    @Test
+    public void objectCreated() {
+        Load button = new Load();
+        assertNotNull(button);
+    }
 
     @Test
     public void ReadableFile() {
 
-        File myTestFile = new File("C:\\Users\\alexa\\Desktop\\test.txt");
-        if (myTestFile.canRead()) {
-            System.out.println(myTestFile.getAbsolutePath() + " Readable! ");
-        } else {
-            System.out.println(myTestFile.getAbsolutePath() + " Unreadable! ");
-        }
+        String filePath = new File("test.txt").getAbsolutePath();
+        File file = new File(filePath);
+        System.out.println(filePath);
+        assertNotNull(file.canRead());
     }
 
     @Test
     public void EmptyFile() throws IOException {
 
-        BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\alexa\\Desktop\\test.txt"));
+        String filePath = new File("test.txt").getAbsolutePath();
+        BufferedReader br = new BufferedReader(new FileReader(filePath));
 
-        if (br.readLine() == null) {
-            System.out.println("Empty File!");
-        }
-        else System.out.println("The file is not empty!");
+        assertNotNull(br.readLine());
+
+
 
     }
 
