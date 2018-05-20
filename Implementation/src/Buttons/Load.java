@@ -15,36 +15,52 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 public class Load {
-    public void setButton(Group group, Stage stage, ObservableList<String> items) {
-        Button load = new Button();
+    private Button load;
+    public Group group;
+    public Stage stage;
+    public ObservableList<String> items;
+
+    private void init(Group group, Stage stage, ObservableList<String> items) {
+        this.group = group;
+        this.stage = stage;
+        this.items = items;
+        load = new Button();
         load.setText("Load memory");
         load.setLayoutX(120);
         load.setLayoutY(600);
-        group.getChildren().add(load);
+        this.group.getChildren().add(load);
+    }
+
+    private void handleLoad(Stage stage, ObservableList<String> items) {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Select memory file");
+        File file = null;
+        file = fileChooser.showOpenDialog(stage);
+        if(file != null) {
+            try {
+                FileInputStream fis = new FileInputStream(file.getAbsolutePath());
+                ObjectInputStream ois = new ObjectInputStream(fis);
+                ObservableList<String> readItems;
+                readItems = FXCollections.observableList((List<String>)ois.readObject());
+                items.clear();
+                items.addAll(readItems);
+            }
+            catch(IOException ioe) {
+                ioe.printStackTrace();
+            }
+            catch(ClassNotFoundException cnfe) {
+                cnfe.printStackTrace();
+            }
+        }
+    }
+
+    public void setButton(Group g, Stage s, ObservableList<String> i) {
+        init(g, s, i);
         //Action
         load.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                FileChooser fileChooser = new FileChooser();
-                fileChooser.setTitle("Select memory file");
-                File file = null;
-                file = fileChooser.showOpenDialog(stage);
-                if(file != null) {
-                    try {
-                        FileInputStream fis = new FileInputStream(file.getAbsolutePath());
-                        ObjectInputStream ois = new ObjectInputStream(fis);
-                        ObservableList<String> readItems;
-                        readItems = FXCollections.observableList((List<String>)ois.readObject());
-                        items.clear();
-                        items.addAll(readItems);
-                    }
-                    catch(IOException ioe) {
-                        ioe.printStackTrace();
-                    }
-                    catch(ClassNotFoundException cnfe) {
-                        cnfe.printStackTrace();
-                    }
-                }
+                handleLoad(stage, items);
             }
         });
     }

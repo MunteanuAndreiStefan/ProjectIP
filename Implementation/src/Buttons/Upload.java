@@ -22,89 +22,121 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Upload {
-    public void setButton(Group group, Stage stage, ObservableList<String> items) {
-        Button upload = new Button();
+    private Button upload;
+    public Group group;
+    public Stage stage;
+    public ObservableList<String> items;
+
+    private void init(Group group, Stage stage, ObservableList<String> items) {
+        this.group = group;
+        this.items = items;
+        this.stage = stage;
+        upload = new Button();
         upload.setText("Upload");
         upload.setLayoutX(40);
         upload.setLayoutY(600);
-        group.getChildren().add(upload);
+        this.group.getChildren().add(upload);
+    }
+
+    private List<JSONObject> getJsonObjects() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setTitle("Select image/text to upload");
+        List<File> inputFile = fileChooser.showOpenMultipleDialog(stage);
+        if(inputFile == null)
+            return null;
+        List<JSONObject> jsonObjects = new ArrayList<>();
+        JSONParser parser = new JSONParser();
+        for(int i=0; i<inputFile.size(); i++){
+            Object obj = null;
+            try {
+                obj = parser.parse(new FileReader(inputFile.get(i)));
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+            JSONObject jsonObject = (JSONObject) obj;
+            jsonObjects.add(jsonObject);
+        }
+        return jsonObjects;
+    }
+
+    private String getHeader() {
+        String dataToWrite = "";
+        dataToWrite += "@relation animals" + '\n' + '\n';
+        dataToWrite += "@attribute class {Mamifer, Insecta}" + '\n';
+        dataToWrite += "@attribute classMatching {low, high}" + '\n';
+        dataToWrite += "@attribute concept {Soarece, Albina, Caine, Motan, Urs, Maimuta}" + '\n';
+        dataToWrite += "@attribute conceptMatching {low, high}" + '\n' + '\n';
+        //
+        dataToWrite += "@data" + '\n';
+        return dataToWrite;
+    }
+
+    private String parseJsonObj(JSONObject jsonObject) {
+        String classFound = (String) jsonObject.get("Class");
+        String concept = (String) jsonObject.get("Found concept");
+        Double classMatching = (Double) jsonObject.get("Class matching");
+        Double conceptMatching = (Double) jsonObject.get("Concept matching");
+        String matchingClassIntensivity;
+        String matchingConceptIntensivity;
+
+        if(classMatching < 50)
+            matchingClassIntensivity = "low";
+        else
+            matchingClassIntensivity = "high";
+        //
+        if(conceptMatching < 50)
+            matchingConceptIntensivity = "low";
+        else
+            matchingConceptIntensivity = "high";
+        return classFound + "," + matchingClassIntensivity + "," + concept + "," + matchingConceptIntensivity + '\n';
+    }
+
+    private void decide(List<JSONObject> jsonObjects) {
+        try {
+            //Decision decision = new Decision();
+            //Pair<String, Double> ans = decision.check(jsonObjects, items);
+            //items.add(ans.getKey());
+            //
+            //new ConceptPopup(group, ans.getKey(), ans.getValue());
+            //
+            //Weka classifier
+            String forWekaFile = "forWekaFile.txt";
+            Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(forWekaFile), "utf-8"));
+            //
+            //To artff
+            String dataToWrite = getHeader();
+            writer.write(dataToWrite);
+            for(int i=0;i<jsonObjects.size();i++){
+                String line = parseJsonObj(jsonObjects.get(i));
+                writer.write(line);
+                //System.out.println(classFound + " " + concept + " " + classMatching + " " + conceptMatching);
+            }
+            //
+            //writer.write("Saa");
+            writer.close();
+            WekaDecision wekaDecision = new WekaDecision();
+            wekaDecision.classify(forWekaFile);
+            //
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void setButton(Group g, Stage s, ObservableList<String> i) {
+        init(g, s, i);
         //Action
         upload.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                FileChooser fileChooser = new FileChooser();
-                fileChooser.setTitle("Select image/text to upload");
-                List<File> inputFile = fileChooser.showOpenMultipleDialog(stage);
-                List<JSONObject> jsonObjects = new ArrayList<>();
-                JSONParser parser = new JSONParser();
-                for(int i=0; i<inputFile.size(); i++){
-                    Object obj = null;
-                    try {
-                        obj = parser.parse(new FileReader(inputFile.get(i)));
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    } catch (ParseException e) {
-                        e.printStackTrace();
-                    }
-                    JSONObject jsonObject = (JSONObject) obj;
-                    jsonObjects.add(jsonObject);
-                }
-                try {
-                    //Decision decision = new Decision();
-                    //Pair<String, Double> ans = decision.check(jsonObjects, items);
-                    //items.add(ans.getKey());
-                    //
-                    //new ConceptPopup(group, ans.getKey(), ans.getValue());
-                    //
-                    //Weka classifier
-                    String forWekaFile = "forWekaFile.txt";
-                    Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(forWekaFile), "utf-8"));
-                    //
-                        //To artff
-                        String dataToWrite = "";
-                        dataToWrite += "@relation animals" + '\n' + '\n';
-                        dataToWrite += "@attribute class {Mamifer, Insecta}" + '\n';
-                        dataToWrite += "@attribute classMatching {low, high}" + '\n';
-                        dataToWrite += "@attribute concept {Soarece, Albina, Caine, Motan, Urs, Maimuta}" + '\n';
-                        dataToWrite += "@attribute conceptMatching {low, high}" + '\n' + '\n';
-                        //
-                        dataToWrite += "@data" + '\n';
-                        writer.write(dataToWrite);
-                        for(int i=0;i<jsonObjects.size();i++){
-                            String classFound = (String)jsonObjects.get(i).get("Class");
-                            String concept = (String)jsonObjects.get(i).get("Found concept");
-                            Double classMatching = (Double) jsonObjects.get(i).get("Class matching");
-                            Double conceptMatching = (Double) jsonObjects.get(i).get("Concept matching");
-                            String matchingClassIntensivity;
-                            String matchingConceptIntensivity;
-                            if(classMatching < 50)
-                                    matchingClassIntensivity = "low";
-                            else
-                                    matchingClassIntensivity = "high";
-                            //
-                            if(conceptMatching < 50)
-                                    matchingConceptIntensivity = "low";
-                            else
-                                    matchingConceptIntensivity = "high";
-                            String line = classFound + "," + matchingClassIntensivity + "," + concept + "," + matchingConceptIntensivity + '\n';
-                            writer.write(line);
-                            //System.out.println(classFound + " " + concept + " " + classMatching + " " + conceptMatching);
-                        }
-
-                    //
-
-                    //writer.write("Saa");
-                    writer.close();
-                    WekaDecision wekaDecision = new WekaDecision();
-                    wekaDecision.classify(forWekaFile);
-                    //
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (ParseException e) {
-                    e.printStackTrace();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+                List<JSONObject> jsonObjects = getJsonObjects();
+                if(jsonObjects != null)
+                    decide(jsonObjects);
             }
         });
     }

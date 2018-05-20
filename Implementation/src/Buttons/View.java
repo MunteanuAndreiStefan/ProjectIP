@@ -11,36 +11,56 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class View {
-    public void setButton(Group group, ListView<String> list) {
-        Button view = new Button();
+    private Button view;
+    public Group group;
+    public ListView<String> list;
+
+    private void init(Group group, ListView<String> list) {
+        this.group = group;
+        this.list = list;
+        view = new Button();
         view.setText("View details");
         view.setLayoutX(360);
         view.setLayoutY(600);
-        group.getChildren().add(view);
+        this.group.getChildren().add(view);
+    }
+
+    private String getData(String obj) {
+        String data = "";
+        data += "Nume : " + obj + "\n";
+        data += "Class : " + "numele clasei" + "\n";
+        data += "Concept matching : " + "..." + "\n";
+        data += "Class of the concept matching percentage" + "\n";
+        data += "Concept details" + "\n";
+        data += "Concept attachement" + "\n";
+        return data;
+    }
+
+    private void handleView() {
+        String obj = list.getSelectionModel().getSelectedItem();
+        System.out.println("Va permite vizuarilzarea detaliata a unui concept selectat");
+        System.out.println("Concept selectat : " + obj);
+        //
+        String data = getData(obj);
+        //
+        Label label = new Label(data);
+        StackPane secondaryLayout = new StackPane();
+        secondaryLayout.getChildren().add(label);
+        //
+        Scene secondScene = new Scene(secondaryLayout, 300, 150);
+        //
+        Stage newWindow = new Stage();
+        newWindow.setTitle("View details");
+        newWindow.setScene(secondScene);
+        newWindow.show();
+    }
+
+    public void setButton(Group g, ListView<String> l) {
+        init(g, l);
         view.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Va permite vizuarilzarea detaliata a unui concept selectat");
-                System.out.println("Concept selectat : " + list.getSelectionModel().getSelectedItem());
-                //
-                String data = "";
-                data += "Nume : " + list.getSelectionModel().getSelectedItem() + "\n";
-                data += "Class : " + "numele clasei" + "\n";
-                data += "Concept matching : " + "..." + "\n";
-                data += "Class of the concept matching percentage" + "\n";
-                data += "Concept details" + "\n";
-                data += "Concept attachement" + "\n";
-                //
-                Label label = new Label(data);
-                StackPane secondaryLayout = new StackPane();
-                secondaryLayout.getChildren().add(label);
-                //
-                Scene secondScene = new Scene(secondaryLayout, 300, 150);
-                //
-                Stage newWindow = new Stage();
-                newWindow.setTitle("View details");
-                newWindow.setScene(secondScene);
-                newWindow.show();
+                handleView();
             }
         });
     }
