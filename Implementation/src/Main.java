@@ -30,6 +30,7 @@ public class Main extends Application {
         new Login().setButton(group, primaryStage, items);
         new Load().setButton(group, primaryStage, items);
         new Save().setButton(group, primaryStage, items);
+        new FileLoad().setButton(group,primaryStage,items);
         new View().setButton(group, list);
         new Delete().setButton(group, list);
         new Modify().setButton(group, list);
