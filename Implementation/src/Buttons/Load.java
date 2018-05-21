@@ -1,9 +1,6 @@
 package Buttons;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.*;
 import java.util.List;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -20,7 +17,7 @@ public class Load {
     public Stage stage;
     public ObservableList<String> items;
 
-    private void init(Group group, Stage stage, ObservableList<String> items) {
+    public void init(Group group, Stage stage, ObservableList<String> items) {
         this.group = group;
         this.stage = stage;
         this.items = items;
@@ -31,27 +28,15 @@ public class Load {
         this.group.getChildren().add(load);
     }
 
-    private void handleLoad(Stage stage, ObservableList<String> items) {
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Select memory file");
-        File file = null;
-        file = fileChooser.showOpenDialog(stage);
-        if(file != null) {
-            try {
-                FileInputStream fis = new FileInputStream(file.getAbsolutePath());
-                ObjectInputStream ois = new ObjectInputStream(fis);
-                ObservableList<String> readItems;
-                readItems = FXCollections.observableList((List<String>)ois.readObject());
-                items.clear();
-                items.addAll(readItems);
-            }
-            catch(IOException ioe) {
-                ioe.printStackTrace();
-            }
-            catch(ClassNotFoundException cnfe) {
-                cnfe.printStackTrace();
-            }
-        }
+    public ObservableList<String> handleLoad(File file,ObservableList<String> items) throws IOException, ClassNotFoundException {
+            FileInputStream fis = new FileInputStream(file.getAbsolutePath());
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            ObservableList<String> readItems;
+            readItems = FXCollections.observableList((List<String>)ois.readObject());
+            items.clear();
+            items.addAll(readItems);
+            return items;
+
     }
 
     public void setButton(Group g, Stage s, ObservableList<String> i) {
@@ -60,9 +45,23 @@ public class Load {
         load.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                handleLoad(stage, items);
+
+                FileChooser fileChooser = new FileChooser();
+                fileChooser.setTitle("Select memory file");
+                File file = null;
+                file = fileChooser.showOpenDialog(stage);
+                if (file != null) {
+                    try {
+                        items = handleLoad(file, items);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (ClassNotFoundException e) {
+                        e.printStackTrace();
+                    }
+                }
             }
         });
-    }
+        }
 
 }
+
