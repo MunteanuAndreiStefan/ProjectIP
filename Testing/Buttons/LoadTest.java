@@ -1,6 +1,8 @@
-package Testing.Buttons;
+package Buttons;
 
 import Buttons.Load;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import org.junit.Test;
 import sample.Decision;
 
@@ -23,7 +25,7 @@ public class LoadTest {
     @Test
     public void ReadableFile() {
 
-        String filePath = new File("test.txt").getAbsolutePath();
+        String filePath = new File("Testing/LoadTest.ser").getAbsolutePath();
         File file = new File(filePath);
         System.out.println(filePath);
         assertNotNull(file.canRead());
@@ -32,13 +34,22 @@ public class LoadTest {
     @Test
     public void EmptyFile() throws IOException {
 
-        String filePath = new File("test.txt").getAbsolutePath();
+        String filePath = new File("Testing/LoadTest.ser").getAbsolutePath();
         BufferedReader br = new BufferedReader(new FileReader(filePath));
 
         assertNotNull(br.readLine());
 
+    }
 
+    @Test
+    public void loadHandleTest() throws IOException, ClassNotFoundException {
+        Load button = new Load();
+        File file = new File("Testing/LoadTest.ser");
+        ObservableList<String> expectedItems = FXCollections.observableArrayList("Concept 1","Concept 2","Concept 3","Concept 4");
+        ObservableList<String> items = FXCollections.observableArrayList();
+        button.handleLoad(file,items);
 
+        assertEquals(expectedItems,items);
     }
 
 

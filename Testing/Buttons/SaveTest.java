@@ -2,8 +2,10 @@ package Testing.Buttons;
 
 import Buttons.Load;
 import Buttons.Save;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.embed.swing.JFXPanel;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import org.junit.Test;
@@ -24,7 +26,7 @@ public class SaveTest {
     @Test
     public void ReadableFile() {
 
-        String filePath = new File("test.txt").getAbsolutePath();
+        String filePath = new File("SaveTest.ser").getAbsolutePath();
         File file = new File(filePath);
         assertNotNull(file.canRead());
     }
@@ -33,35 +35,31 @@ public class SaveTest {
     @Test
     public void EmptyFile() throws IOException {
 
-        String filePath = new File("test.txt").getAbsolutePath();
+        String filePath = new File("SaveTest.ser").getAbsolutePath();
         BufferedReader br = new BufferedReader(new FileReader(filePath));
 
         assertNotNull(br.readLine());
 
     }
 
-//    @Test
-//    public void wellHandled(){
-//        Save button = new Save();
-//        Stage stage = new Stage();
-//        ObservableList<String> items = FXCollections.observableArrayList("Concept 1", "Concept 2", "Concept 3", "Concept 4");
-//        button.handler(stage,items);
-//
-//        FileChooser fileChooser = new FileChooser();
-//        fileChooser.setTitle("Select memory file");
-//        File file = null;
-//        file = fileChooser.showSaveDialog(stage);
-//        if(file != null) {
-//            try{
-//                FileOutputStream fos= new FileOutputStream(file.getAbsolutePath());
-//                ObjectOutputStream oos= new ObjectOutputStream(fos);
-//                oos.writeObject(new ArrayList<>(items));
-//                oos.close();
-//                fos.close();
-//            }catch(IOException ioe){
-//                ioe.printStackTrace();
-//            }
-//        }
-//
-//    }
+    @Test
+    public void handleSaveTest() throws IOException, ClassNotFoundException {
+
+        Save button = new Save();
+        ObservableList<String> items = FXCollections.observableArrayList("Concept 1", "Concept 2", "Concept 3", "Concept 4");
+        File file = new File( "SaveTest.ser");
+        button.handleSave(file,items);
+
+        ArrayList obj1 = null;
+        FileInputStream fileIn1 = new FileInputStream("SaveTest.ser");
+        ObjectInputStream in1 = new ObjectInputStream(fileIn1);
+        obj1 =  (ArrayList) in1.readObject();
+        in1.close();
+        fileIn1.close();
+
+        assertEquals(items,obj1);
+
+
+
+    }
 }
