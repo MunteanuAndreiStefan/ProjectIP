@@ -35,7 +35,7 @@ public class SaveTest {
     @Test
     public void EmptyFile() throws IOException {
 
-        String filePath = new File("SaveTest.ser").getAbsolutePath();
+        String filePath = new File("Testing/SaveTest.ser").getAbsolutePath();
         BufferedReader br = new BufferedReader(new FileReader(filePath));
 
         assertNotNull(br.readLine());
@@ -47,11 +47,11 @@ public class SaveTest {
 
         Save button = new Save();
         ObservableList<String> items = FXCollections.observableArrayList("Concept 1", "Concept 2", "Concept 3", "Concept 4");
-        File file = new File( "SaveTest.ser");
+        File file = new File( "Testing/SaveTest.ser");
         button.handleSave(file,items);
 
         ArrayList obj1 = null;
-        FileInputStream fileIn1 = new FileInputStream("SaveTest.ser");
+        FileInputStream fileIn1 = new FileInputStream("Testing/SaveTest.ser");
         ObjectInputStream in1 = new ObjectInputStream(fileIn1);
         obj1 =  (ArrayList) in1.readObject();
         in1.close();
