@@ -8,7 +8,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class EntitySearchApi {
-    static String subscriptionKey ="";
+    static String subscriptionKey ="55e85d3a7ee9426b8a6370109bb57235";
 
     static String host = "https://api.cognitive.microsoft.com";
     static String path = "/bing/v7.0/entities";
@@ -57,7 +57,6 @@ public class EntitySearchApi {
                    b=true;
            if(o.get("name").toString().toUpperCase().equals(query.toUpperCase())&&b&&!o.has("url"))
            {
-               result.put("Name", o.get("name"));
                result.put("Description",o.get("description"));
                break;
            }

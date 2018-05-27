@@ -19,6 +19,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -46,14 +47,31 @@ public class FileLoad
             public void handle(ActionEvent event)
             {
                 String imgLink = "https://www.what-dog.net/Images/faces2/scroll001.jpg";
-                JSONObject jsonObject = ImgApi.analyzeImage(imgLink);
+                JSONObject jsonObject = null;
+                try {
+                    jsonObject = ImgApi.analyzeImage(imgLink);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
                 if (jsonObject != null)
                 {
-                    items.add(jsonObject.get("Found concept").toString());
+                    try {
+                        items.add(jsonObject.get("Found concept").toString());
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
 
                     JSONObject toSend = new JSONObject();
-                    toSend.put("text", jsonObject.get("Text"));
-                    toSend.put("conceptClass", "animals");
+                    try {
+                        toSend.put("text", jsonObject.get("Text"));
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    try {
+                        toSend.put("conceptClass", "animals");
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     JSONObject result;
                     CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 
@@ -70,6 +88,8 @@ public class FileLoad
                         System.out.println(result.toString());
                     } catch (IOException e)
                     {
+                        e.printStackTrace();
+                    } catch (JSONException e) {
                         e.printStackTrace();
                     } finally
                     {

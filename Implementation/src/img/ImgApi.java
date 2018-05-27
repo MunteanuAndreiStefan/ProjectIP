@@ -8,6 +8,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -23,8 +24,7 @@ public class ImgApi
     private static final String key = "22cfb261021343e6880a318e6c5e43ea";
     private static final String zone = "northeurope";
 
-    public static JSONObject analyzeImage(String imageUrl)
-    {
+    public static JSONObject analyzeImage(String imageUrl) throws JSONException {
         JSONObject jsonObject;
         JSONObject result = null;
 //        try

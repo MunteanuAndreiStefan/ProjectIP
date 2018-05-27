@@ -1,5 +1,6 @@
 //package sample;
 import Buttons.*;
+import entitysearch.EntitySearchApi;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -8,6 +9,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
+import org.json.JSONObject;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import static entitysearch.EntitySearchApi.entitySearchFromText;
+import static java.util.logging.Logger.getLogger;
 
 
 public class Main extends Application {
@@ -30,7 +38,6 @@ public class Main extends Application {
         new Login().setButton(group, primaryStage, items);
         new Load().setButton(group, primaryStage, items);
         new Save().setButton(group, primaryStage, items);
-        new FileLoad().setButton(group,primaryStage,items);
         new View().setButton(group, list);
         new Delete().setButton(group, list);
         new Modify().setButton(group, list);
@@ -39,6 +46,12 @@ public class Main extends Application {
         Scene scene = new Scene(group, 1100, 700);
         primaryStage.setScene(scene);
         primaryStage.show();
+        //try {
+        //    JSONObject j=entitySearchFromText("Bird");
+        //    System.out.println(j.toString());
+        //} catch (Exception ex) {
+        //    getLogger(EntitySearchApi.class.getName()).log(Level.SEVERE, null, ex);
+        //}
     }
 
 
