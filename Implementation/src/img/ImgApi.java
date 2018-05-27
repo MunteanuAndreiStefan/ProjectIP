@@ -29,8 +29,8 @@ public class ImgApi
         JSONObject result = null;
 //        try
 //        {
-        //tring content = new String(Files.readAllBytes(Paths.get("test.json")));
-        //jsonObject = new JSONObject(content);
+//            String content = new String(Files.readAllBytes(Paths.get("test.json")));
+//            jsonObject = new JSONObject(content);
         jsonObject = analizeImageAPI(imageUrl);
         if (jsonObject == null)
             return null;
@@ -43,9 +43,9 @@ public class ImgApi
         result.put("Class matching", 0);
         result.put("Concept matching", ((JSONObject) jsonObject.getJSONArray("categories").get(0)).get("score"));
         result.append("Others matching", "");
+        result.put("Text", ((JSONObject) ((JSONObject) jsonObject.get("description")).getJSONArray("captions").get(0)).get("text"));
 
-//        }
-// catch (IOException e)
+//        } catch (IOException e)
 //        {
 //            e.printStackTrace();
 //        }

@@ -40,7 +40,7 @@ public class Requests
     {
         try
         {
-            String urlString = linkToTextServiceHost + "/sendText?text=" + text;
+            String urlString = linkToTextServiceHost + "/sendText";
             URL url = new URL(urlString);
             URLConnection conn = url.openConnection();
             InputStream is = conn.getInputStream();

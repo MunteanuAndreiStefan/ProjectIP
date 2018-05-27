@@ -12,13 +12,26 @@ import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.EntityUtils;
 import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 
 /**
  * @author andrew
  */
 public class FileLoad
 {
+    private static final String ip = "172.20.10.4";
+    private static final String port = "8000";
+
     public void setButton(Group group, Stage stage, ObservableList<String> items)
     {
         Button fileLoad = new Button();
@@ -35,7 +48,40 @@ public class FileLoad
                 String imgLink = "https://www.what-dog.net/Images/faces2/scroll001.jpg";
                 JSONObject jsonObject = ImgApi.analyzeImage(imgLink);
                 if (jsonObject != null)
+                {
                     items.add(jsonObject.get("Found concept").toString());
+
+                    JSONObject toSend = new JSONObject();
+                    toSend.put("text", jsonObject.get("Text"));
+                    toSend.put("conceptClass", "animals");
+                    JSONObject result;
+                    CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+
+                    try
+                    {
+                        HttpPost request = new HttpPost("http://" + ip + ":" + port + "/analyze");
+                        StringEntity params = new StringEntity(toSend.toString());
+                        request.addHeader("content-type", "application/json");
+                        request.setEntity(params);
+                        HttpResponse response = httpClient.execute(request);
+                        result = new JSONObject(EntityUtils.toString(response.getEntity()));
+
+                        //Obtained json from text module -> result
+                        System.out.println(result.toString());
+                    } catch (IOException e)
+                    {
+                        e.printStackTrace();
+                    } finally
+                    {
+                        try
+                        {
+                            httpClient.close();
+                        } catch (IOException e)
+                        {
+                            e.printStackTrace();
+                        }
+                    }
+                }
 
 
 //                FileChooser fileChooser = new FileChooser();
