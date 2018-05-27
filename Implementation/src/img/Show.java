@@ -16,17 +16,35 @@ import static java.util.logging.Logger.getLogger;
 
 public class Show {
     Group group;
+    static Label concept;
+    static Label conceptMatching;
+    static Label metadata;
+    static Label description;
+    static Image img;
+    static ImageView imgview;
+
     public void showImage(Group group, Stage stage, JSONObject jsonObject, String imgLink) throws JSONException {
         this.group = group;
+        this.group.getChildren().remove(concept);
+
+        this.group.getChildren().remove(conceptMatching);
+
+        this.group.getChildren().remove(metadata);
+
+        this.group.getChildren().remove(description);
+
+        this.group.getChildren().remove(img);
+
+        this.group.getChildren().remove(imgview);
         //System.out.println(imgLink);
         //System.out.println(jsonObject.toString());
-        Label concept = new Label("Concept: " + jsonObject.get("Found concept"));
+        concept = new Label("Concept: " + jsonObject.get("Found concept"));
         concept.setLayoutX(30);
         concept.setLayoutY(50);
-        Label conceptMatching = new Label("Concept matching: " + jsonObject.get("Concept matching"));
+        conceptMatching = new Label("Concept matching: " + jsonObject.get("Concept matching"));
         conceptMatching.setLayoutX(30);
         conceptMatching.setLayoutY(70);
-        Label metadata = new Label("Metadata: " + jsonObject.get("Metadata"));
+        metadata = new Label("Metadata: " + jsonObject.get("Metadata"));
         metadata.setLayoutX(30);
         metadata.setLayoutY(90);
         this.group.getChildren().add(concept);
@@ -51,19 +69,18 @@ public class Show {
                 i++;
             }
             System.out.println(ans);
-            Label description = new Label("Description: \n " + ans);
+            description = new Label("Description: \n " + ans);
             description.setLayoutX(30);
             description.setLayoutY(170);
             this.group.getChildren().add(description);
         } catch (Exception ex) {
             getLogger(EntitySearchApi.class.getName()).log(Level.SEVERE, null, ex);
         }
-
         //
         System.out.println("Concept : " + jsonObject.get("Found concept") + ";" + "Concept matching : " + jsonObject.get("Concept matching"));
         System.out.println("Metadata : " + jsonObject.get("Metadata") );
-        Image img = new Image(imgLink, 300, 300, true, false);
-        ImageView imgview = new ImageView(img);
+        img = new Image(imgLink, 300, 300, true, false);
+        imgview = new ImageView(img);
         imgview.setLayoutX(440);
         imgview.setLayoutY(50);
         this.group.getChildren().add(imgview);
