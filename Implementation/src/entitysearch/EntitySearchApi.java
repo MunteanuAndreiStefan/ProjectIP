@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package entitysearch;
 import java.io.*;
 import java.net.*;
@@ -12,13 +7,8 @@ import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-
-/**
- *
- * @author andrew
- */
 public class EntitySearchApi {
-    static String subscriptionKey = "";
+    static String subscriptionKey ="";
 
     static String host = "https://api.cognitive.microsoft.com";
     static String path = "/bing/v7.0/entities";
@@ -77,11 +67,12 @@ public class EntitySearchApi {
     /*
     public static void main(String[] args) {
         try {
-            JSONObject j=entitySearchFromText("Cat");
+            JSONObject j=entitySearchFromText("Bird");
             System.out.println(j.toString());
         } catch (Exception ex) {
             Logger.getLogger(EntitySearchApi.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     */
+    
 }
