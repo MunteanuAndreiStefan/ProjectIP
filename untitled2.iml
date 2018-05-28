@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Documents/ProjectIP/Dependencies/json-simple-1.1.1.jar!/" />
+          <root url="jar://$USER_HOME$/Documents/ProjectIP/Dependencies/weka.jar!/" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/Documents/ProjectIP/Dependencies/ModalDialogs/src" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/Dependencies/Utils/src/main/java" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/Dependencies/Utils/src/test/java" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/ImageModule/ComputerVision/src" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/Implementation/src" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/class_mutants/JDC_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/class_mutants/JID_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/class_mutants/JSD_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/class_mutants/JSI_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/class_mutants/JSI_2" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/class_mutants/JSI_3" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/original" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/VendingMachine()/SDL_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/VendingMachine()/SDL_2" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_25" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_26" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_27" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_28" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_29" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_30" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_31" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_32" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_33" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_34" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_35" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIS_36" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIU_3" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIU_4" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AOIU_5" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AORB_5" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AORB_6" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AORB_7" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/AORB_8" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/CDL_7" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/COI_7" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/COI_8" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/COI_9" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/COR_5" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/COR_6" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/LOI_10" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/LOI_7" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/LOI_8" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/LOI_9" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ODL_19" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ODL_20" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ODL_21" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ODL_22" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_29" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_30" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_31" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_32" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_33" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_34" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_35" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_36" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_37" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_38" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_39" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_40" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_41" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/ROR_42" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/SDL_10" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/SDL_11" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/SDL_13" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/SDL_14" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/SDL_15" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/SDL_16" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/SDL_8" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getChoc(java.lang.StringBuffer)/VDL_8" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getCredit()/AOIS_41" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getCredit()/AOIS_42" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getCredit()/AOIU_7" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getCredit()/LOI_12" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/int_getCredit()/SDL_20" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/AOIU_6" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/COI_10" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/LOI_11" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/ROR_43" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/ROR_44" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/ROR_45" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/ROR_46" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/ROR_47" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/ROR_48" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/ROR_49" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/SDL_17" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/SDL_18" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_addChoc(java.lang.String)/SDL_19" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_10" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_11" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_12" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_13" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_14" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_15" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_16" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_17" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_18" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_19" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_2" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_20" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_21" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_22" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_23" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_24" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_3" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_4" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_5" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_6" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_7" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_8" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIS_9" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIU_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AOIU_2" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AORB_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AORB_2" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AORB_3" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/AORB_4" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/COI_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/COI_2" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/COI_3" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/COI_4" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/COI_5" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/COI_6" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/COR_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/COR_2" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/COR_3" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/COR_4" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/LOI_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/LOI_2" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/LOI_3" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/LOI_4" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/LOI_5" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/LOI_6" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ODL_10" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ODL_13" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ODL_14" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ODL_5" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ODL_6" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ODL_9" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_1" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_10" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_11" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_12" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_13" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_14" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_15" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_16" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_17" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_18" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_19" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_2" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_20" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_21" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_22" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_23" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_24" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_25" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_26" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_27" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_28" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_3" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_4" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_5" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_6" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_7" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_8" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/ROR_9" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/SDL_3" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/SDL_4" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/SDL_5" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/SDL_6" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/SDL_7" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/VDL_5" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/result/VendingMachine/traditional_mutants/void_coin(int)/VDL_6" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/MutationTesting/exp/src" />
+          <root url="file://$USER_HOME$/Documents/ProjectIP/Testing" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Desktop/org.json.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="org.eclipse.ecf:org.apache.httpcomponents.httpclient:4.5.2.v20170210-0925" level="project" />
+    <orderEntry type="library" name="org.eclipse.ecf:org.apache.httpcomponents.httpcore:4.4.6.v20170210-0925" level="project" />
+    <orderEntry type="library" name="org.eclipse.birt.runtime:org.apache.commons.logging:1.0.4.v201101211617" level="project" />
+  </component>
+</module>

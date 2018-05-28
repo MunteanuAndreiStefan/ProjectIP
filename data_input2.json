@@ -1,0 +1,18 @@
+{
+	"Attachement path": "path",
+	"Class": "Mamifer",
+	"Found concept": "Urs",
+	"Metadata": [{
+		"Latitude": 38.53133,
+		"Longitude": 0.0255446
+	}],
+	"Class matching": 90.0,
+	"Concept matching": 60.0,
+	"Others matching": [{
+		"name": "Elefant",
+		"matching": 0.0255446
+	}, {
+		"name": "Caine",
+		"matching": 0.993063
+	}]
+}
