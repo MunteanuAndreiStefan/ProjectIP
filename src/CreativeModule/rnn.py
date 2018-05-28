@@ -106,7 +106,7 @@ White-backed vulture	Gyps africanus
 Wildcat	Felis silvestris
 Wolverine	Gulo gulo
 """
-#open('input.txt', 'r').read() # should be simple plain text file
+#open('input.txt', 'r').read() 
 chars = list(set(data))
 data_size, vocab_size = len(data), len(chars)
 print 'data has %d characters, %d unique.' % (data_size, vocab_size)
@@ -193,7 +193,7 @@ while True:
 
   # sample from the model now and then
   if n % 100 == 0:
-    sample_ix = sample(hprev, inputs[0], 200)
+    sample_ix = sample(hprev, inputs[0], 250)
     txt = ''.join(ix_to_char[ix] for ix in sample_ix)
     print '----\n %s \n----' % (txt, )
 

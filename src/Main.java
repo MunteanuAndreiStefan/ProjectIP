@@ -67,6 +67,7 @@ public class Main extends Application {
             // run the Unix "ps -ef" command
             // using the Runtime exec method:
             Process p = Runtime.getRuntime().exec("Py -2 E:\\1nfochesti\\java\\untitled2\\src\\CreativeModule\\rnn.py");
+            //Process p = Runtime.getRuntime().exec("rnn.py");
 
             BufferedReader stdInput = new BufferedReader(new
                     InputStreamReader(p.getInputStream()));
