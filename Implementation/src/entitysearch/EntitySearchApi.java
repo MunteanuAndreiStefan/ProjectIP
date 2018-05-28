@@ -14,7 +14,7 @@ public class EntitySearchApi {
     static String path = "/bing/v7.0/entities";
 
     static String mkt = "en-US";
-    
+
     public static JSONObject entitySearchAPI(String query) throws Exception{
         String encoded_query = URLEncoder.encode (query, "UTF-8");
         String params = "?mkt=" + mkt + "&q=" + encoded_query;
@@ -27,7 +27,7 @@ public class EntitySearchApi {
 
         StringBuilder response = new StringBuilder ();
         BufferedReader in = new BufferedReader(
-        new InputStreamReader(connection.getInputStream()));
+                new InputStreamReader(connection.getInputStream()));
         String line;
         while ((line = in.readLine()) != null) {
             response.append(line);
@@ -35,7 +35,7 @@ public class EntitySearchApi {
         in.close();
         return new JSONObject(response.toString());
     }
-    
+
     public static JSONObject entitySearchFromText(String query) throws Exception{
         JSONObject jsonObject;
         JSONObject result=null;
@@ -43,27 +43,34 @@ public class EntitySearchApi {
         if(jsonObject==null)
             return null;
         result=new JSONObject();
-        int i,n;
+        int i,j,n;
         JSONArray objects=((JSONObject) jsonObject.get("entities")).getJSONArray("value");
         JSONObject o;
+        JSONArray entityTypeHints;
         String[] substrings=new String[]{"family","species","breed","animal","pet"};
         boolean b;
+        boolean hintTest;
         n=objects.length();
         for(i=0;i<n;i++){
-           b=false;
-           o=(JSONObject)objects.get(i);
-           for(String s:substrings)
-               if(o.get("description").toString().contains(s))
-                   b=true;
-           if(o.get("name").toString().toUpperCase().equals(query.toUpperCase())&&b&&!o.has("url"))
-           {
-               result.put("Description",o.get("description"));
-               break;
-           }
+            b=false;
+            hintTest=false;
+            o=(JSONObject)objects.get(i);
+            for(String s:substrings)
+                if(o.get("description").toString().contains(s))
+                    b=true;
+            entityTypeHints=o.getJSONObject("entityPresentationInfo").getJSONArray("entityTypeHints");
+            for(j=0; j<entityTypeHints.length(); j++)
+                if(entityTypeHints.get(j).equals("Animal"))
+                    hintTest=true;
+            if(hintTest && o.get("name").toString().toUpperCase().equals(query.toUpperCase())&&b&&!o.has("url"))
+            {
+                result.put("Description",o.get("description"));
+                break;
+            }
         }
         return result;
     }
-    /*
+/*
     public static void main(String[] args) {
         try {
             JSONObject j=entitySearchFromText("Bird");
@@ -72,6 +79,6 @@ public class EntitySearchApi {
             Logger.getLogger(EntitySearchApi.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    */
-    
+*/
+
 }
