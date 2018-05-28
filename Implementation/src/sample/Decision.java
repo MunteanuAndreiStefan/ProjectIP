@@ -16,7 +16,7 @@ public class Decision {
         Map<String, Integer> count = new HashMap<String, Integer>();
         for(int i=0; i<objects.size(); i++){
             String concept = (String)objects.get(i).get("found concept");
-            String percent = objects.get(i).get("Concept matching").toString();
+            String percent = (String)objects.get(i).get("Concept matching");
             //System.out.println(concept + " " + percent);
             if(count.containsKey(concept)) {
                 Double upd = Math.max(Double.parseDouble(percent), results.get(concept));

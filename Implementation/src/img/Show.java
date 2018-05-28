@@ -56,6 +56,7 @@ public class Show {
             String str = (String) obj.get("Description");
             String ans = "";
             int i = 0;
+            int lines = 0;
             int cnt = 0;
             while(i < str.length()){
                 if(str.charAt(i) == ' '){
@@ -63,10 +64,15 @@ public class Show {
                 }
                 if(cnt % 7 == 0 && cnt > 0){
                     ans += '\n';
+                    lines++;
                     cnt = 0;
                 }
                 ans += str.charAt(i);
                 i++;
+                if(lines > 15){
+                    ans += "...";
+                    break;
+                }
             }
             System.out.println(ans);
             description = new Label("Description: \n " + ans);
@@ -86,3 +92,8 @@ public class Show {
         this.group.getChildren().add(imgview);
     }
 }
+
+
+//http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg
+//http://globalvillageextra.com/en/wp-content/uploads/2017/07/PB1201_STORY_CARO-Authority-HealthyOutside-DOG-20160818.jpg
+//https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1hUwk7vxDr6uy2AuQywLoBxiaf99P9RW5nb3hfXdi4MzK1jrkkQ

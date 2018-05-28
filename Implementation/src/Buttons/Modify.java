@@ -4,8 +4,6 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
@@ -13,7 +11,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-//import javax.xml.soap.Text;
+import javax.xml.soap.Text;
 
 public class Modify {
     private Button modify;
@@ -57,18 +55,8 @@ public class Modify {
         ok.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                boolean found = false;
-                for(String concept : list.getItems())
-                    if(concept.equals(textField.getText()) && !concept.equals(list.getSelectionModel().getSelectedItem()))
-                        found = true;
-                if(found == true) {
-                    Alert alert = new Alert(AlertType.ERROR, "Concept already exists!");
-                    alert.showAndWait();
-                }
-                else {
-                    list.getItems().set(list.getSelectionModel().getSelectedIndex(), textField.getText());
-                    modifyStage.hide();
-                }
+                list.getItems().set(list.getSelectionModel().getSelectedIndex(), textField.getText());
+                modifyStage.hide();
             }
         });
         //

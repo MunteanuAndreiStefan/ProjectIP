@@ -10,7 +10,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class View {
+public class        View {
     private Button view;
     public Group group;
     public ListView<String> list;

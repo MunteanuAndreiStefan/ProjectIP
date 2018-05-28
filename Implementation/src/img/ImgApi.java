@@ -32,6 +32,7 @@ public class ImgApi
 //            String content = new String(Files.readAllBytes(Paths.get("test.json")));
 //            jsonObject = new JSONObject(content);
         jsonObject = analizeImageAPI(imageUrl);
+        System.out.println(jsonObject.toString());
         if (jsonObject == null)
             return null;
         result = new JSONObject();

@@ -11,9 +11,6 @@ import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -26,7 +23,7 @@ public class Main extends Application {
     public void start(Stage primaryStage){
         ScrollPane pane = new ScrollPane();
         ListView<String> list = new ListView<>();
-        ObservableList<String> items = FXCollections.observableArrayList("Concept 1", "Concept 2", "Concept 3", "Concept 4");
+        ObservableList<String> items = FXCollections.observableArrayList();
         list.setItems(items);
         list.setPrefHeight(600);
         list.setPrefWidth(300);
@@ -56,11 +53,10 @@ public class Main extends Application {
         //    getLogger(EntitySearchApi.class.getName()).log(Level.SEVERE, null, ex);
         //}
     }
+    public static void main(String[] args) {
 
-
-    public static void main(String[] args) throws IOException {
-
-        String s = null;
+        /*
+         String s = null;
 
         try {
 
@@ -94,5 +90,7 @@ public class Main extends Application {
             e.printStackTrace();
             System.exit(-1);
         }
+         */
+        launch(args);
     }
 }
