@@ -16,8 +16,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import javax.xml.soap.Text;
+//import javax.xml.soap.Text;
 
 /**
  * @author andrew

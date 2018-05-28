@@ -1,0 +1,103 @@
+
+Aardvark	Orycteropus afer
+Aardwolf	Proteles cristata
+African bush elephant	Loxodonta africana
+Amazon river dolphin	Inia geoffrensis
+American alligator	Alligator mississippiensis
+American bison	Bison bison
+American crow	Corvus brachyrhynchos
+American flamingo	Phoenicopterus ruber
+American white pelican	Pelecanus erythrorhynchos
+Andean condor	Vultur gryphus
+Arabian camel	Camelus dromedarius
+Asian elephant	Elephas maximus
+Atlantic salmon	Salmo salar
+Bahaman raccoon	Procyon lotor maynardi
+Bald eagle	Haliaeetus leucocephalus
+Banded pitviper	Trimeresurus fasciatus
+Bee hummingbird	Mellisuga helenae
+Black rhinoceros	Diceros bicornis
+Black widow spider	Latrodectus mactans
+Black wildebeest	Connochaetes gnou
+Blue whale	Balaenoptera musculus
+Bobcat	Lynx rufus
+California condor	Gymnogyps californianus
+California sea lion	Zalophus californianus
+Capybara	Hydrochoerus hydrochaeris
+Caribou/reindeer	Rangifer tarandus
+Cheetah	Acinonyx jubatus
+Common bottlenose dolphin	Tursiops truncatus
+Common chimpanzee	Pan troglodytes
+Cougar	Puma concolor
+Coyote	Canis latrans
+Dingo	Canis dingo
+Eastern diamondback rattlesnake	Crotalus adamanteus
+Elephant seal	Mirounga angustirostris
+Elk	Cervus canadensis
+Emperor penguin	Aptenodytes forsteri
+Emu	Dromaius novaehollandiae
+European otter	Lutra lutra
+Four-horned antelope	Tetracerus quadricornis
+Giant anteater	Myrmecophaga tridactyla
+Giant panda	Ailuropoda melanoleuca
+Giraffe	Giraffa camelopardalis
+Golden hamster	Mesocricetus auratus
+Golden-capped fruit bat	Acerodon jubatus
+Gray fox	Urocyon cinereoargenteus
+Wolf	Canis lupus
+Great spotted kiwi	Apteryx haastii
+Great white shark	Carcharodon carcharias
+Greater dwarf lemur	Cheirogaleus major
+Green anaconda	Eunectes murinus
+Gray heron	Ardea cinerea
+Gray squirrel	Sciurus carolinensis
+Guinea baboon	Papio papio
+Guinea pig	Cavia cobaya
+Hedgehog	Erinaceus europeaeus
+Hippopotamus	Hippopotamus amphibius
+Horse	Equus caballus
+Iguana	Iguana iguana
+Impala	Aepyceros melampus
+Jackal	Canis aureus
+Jaguar	Panthera onca
+Kangaroo rat	Dipodomys phillipsii
+Killer whale	Orcinus orca
+King cobra	Ophiophagus hannah
+Koala bear	Phascolarctos cinereus
+Komodo dragon	Varanus komodoensis
+Leatherback turtle	Dermochelys coriacea
+Leopard	Panthera pardus
+Lion	Panthera leo
+Marsh rabbit	Sylvilagus palustris
+Mekong giant catfish	Pangasianodon gigas
+Nightingale	Luscinia megarhynchos
+Nine-banded armadillo	Dasypus novemcinctus
+North American beaver	Castor canadensis
+Northern cardinal	Cardinalis cardinalis
+Northern flying squirrel	Glaucomys sabrinus
+Ocelot	Felis pardalis
+Orangutan	Pongo pygmaeus
+Ostrich	Struthio camelus
+Peregrine falcon	Falco peregrinus
+Polar bear	Ursus maritimus
+Praying mantis	Mantis religioso
+Red kangaroo	Macropus rufus
+Red panda	Ailurus fulgens
+Snow leopard	Panthera uncia
+Snowy owl	Bubo scandiacus
+Sparrow	Prunella modularis
+Sperm whale	Physeter catodon
+Spider monkey	Ateles geoffroyi
+Spotted halibut	Verasper variegatus
+Spotted hyena	Crocuta crocuta
+Spur-thighed tortoise	Testudo graeca
+Tarantula	Lycosa tarentula
+Tasmanian devil	Sarcophilus hariisi
+Tiger	Panthera tigris
+Tiger shark	Galeocerdo cuvieri
+Turkey	Meleagris gallopavo
+Virginia opossum	Didelphis virginiana
+Western gorilla	Gorilla gorilla
+White-backed vulture	Gyps africanus
+Wildcat	Felis silvestris
+Wolverine	Gulo gulo
